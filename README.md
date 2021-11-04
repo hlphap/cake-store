@@ -14,8 +14,9 @@ This is a website that sells cakes
 ## Installation
 
 `Cake Store` is requires
-⋅⋅* [Node.js](https://nodejs.org/) v16+ to run.
-⋅⋅* [NPM](https://www.npmjs.com/) v16+ to run.
+
+-   [Node.js](https://nodejs.org/) v16+ to run.
+-   [NPM](https://www.npmjs.com/) v16+ to run.
 
 Install the dependencies and devDependencies and start `Cake Store`.
 
