@@ -26,14 +26,15 @@ npm i
 npm run dev
 npm run watch
 ```
+
 ## Use git command
 
--   `git branch <branch name>` : To create branch
--   `git checkout <branch name>` : To get code to new branch
--   `git switch <branch name>` : To switch new branch
--   `git add .` : Add code written to git local
--   `git commit -m "<message>"` : Commit code with message
--   `git push --set-upstream origin <branch name>` : Push code with new branch
+-   `git branch <branch name> : ` To create branch
+-   `git checkout <branch name> : ` To get code to new branch
+-   `git switch <branch name>: ` To switch new branch
+-   `git add . :` Add code written to git local
+-   `git commit -m "<message>" : ` Commit code with message
+-   `git push --set-upstream origin <branch name> : ` Push code with new branch
   
 
 ## Development
