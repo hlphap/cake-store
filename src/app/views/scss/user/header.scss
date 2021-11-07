@@ -1,5 +1,19 @@
 @import 'variables'; //Import _variable de su dung variable
+.navbar-custom{
+    background-color: #9f0311;
+    text-transform: uppercase;
+    font-size: 16px;
+}
 
-h1 {
-    color: red;
+.navbar-brand > a, .toggle-container a, .navbar-brand > a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.toggle-container{
+    transform: translateX(47px);
+}
+
+.user-container button{
+    color: #fff;
 }
