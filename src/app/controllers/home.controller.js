@@ -8,7 +8,7 @@ const index = catchAsync(async (req, res) => {
     // Select view to render
     return res.render('home', {
         title: '', //  Required Title
-        stylesheet: '', // Required Stylesheet name from public
+        stylesheet: 'header.css', // Required Stylesheet name from public
         script: '', // Required Script name from public
         data, // Data to handlebars
     });
