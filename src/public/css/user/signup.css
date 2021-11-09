@@ -1,0 +1,115 @@
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex; }
+
+section .container {
+  position: absolute;
+  top: 10px;
+  left: 38%;
+  justify-content: center;
+  align-items: center;
+  width: 390px;
+  height: 98%;
+  z-index: 2;
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2); }
+
+section .close-btn {
+  position: relative;
+  left: 340px;
+  cursor: pointer; }
+
+section .container .form {
+  width: 350px;
+  font-weight: 600; }
+
+section .container .form h2 {
+  font-weight: 700;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 20px; }
+
+section .container .form h3 {
+  font-size: 1em;
+  font-weight: 600; }
+
+section .container .form p {
+  text-align: center;
+  font-weight: 300; }
+
+section .container .form .input-form {
+  margin-bottom: 15px; }
+
+section .container .form .input-form select:nth-child(1) {
+  width: 47%;
+  padding: 10px 20px;
+  outline: none;
+  border: 0.5px solid;
+  font-size: 14px;
+  background: transparent;
+  border-radius: 10px; }
+
+section .container .form .input-form select:nth-child(2) {
+  width: 47%;
+  padding: 10px 20px;
+  outline: none;
+  border: 0.5px solid;
+  font-size: 14px;
+  background: transparent;
+  border-radius: 10px;
+  float: right; }
+
+section .container .form .input-form select:nth-child(3) {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  border: 0.5px solid;
+  font-size: 14px;
+  background: transparent;
+  border-radius: 10px; }
+
+section .container .form .input-form input {
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  border: 0.5px solid;
+  font-size: 16px;
+  background: transparent;
+  border-radius: 10px; }
+
+section .container .form .input-form input[type='submit'] {
+  background: #9f0311;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer; }
+
+section .container .form .input-form input[type='submit']:hover {
+  background: #bb0303; }
+
+section .container .form .nho-dang-nhap {
+  margin-bottom: 10px;
+  font-size: 16px; }
+
+section .container .form .nho-dang-nhap a {
+  color: #9f0311;
+  float: right; }
+
+section .container .form .input-form p a {
+  color: #9f0311; }
+
+section .container .form .signout p {
+  font-size: 14px;
+  font-weight: 600; }
+
+section .container .form .signout a {
+  color: #9f0311; }

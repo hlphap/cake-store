@@ -5,8 +5,8 @@ const index = catchAsync(async (req, res) => {
         name: 'com',
         price: 5000,
     };
-    return res.render('menu/menu', {
-        style: 'header.css',
+    return res.render('user/menu/menu', {
+        styles: ['header', 'footer'],
         order,
     });
 });

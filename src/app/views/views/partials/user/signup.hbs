@@ -1,0 +1,52 @@
+<section>
+    <div class='container' id='popupForm'>
+        <div class='close-btn' onclick='closeForm()'> x </div>
+        <div class='form'>
+            <h2>ĐĂNG KÍ</h2>
+            <form>
+                <h3>Thông tin tài khoản</h3>
+                <div class='input-form'>
+                    <input type='text' placeholder='Tên đăng nhập/Email' />
+                </div>
+                <div class='input-form'>
+                    <input type='password' placeholder='Mật khẩu' />
+                </div>
+                <div class='input-form'>
+                    <input type='password' placeholder=' Nhập lại Mật khẩu' />
+                </div>
+                <h3>Thông tin cá nhân</h3>
+                <div class='input-form'>
+                    <input type='text' placeholder='Tên đầy đủ' />
+                </div>
+                <div class='input-form'>
+                    <input type='date' placeholder='Ngày sinh' />
+                </div>
+                <div class='input-form'>
+                    <select name='provinces' required=''>
+                        <option value=''>Tỉnh/Thành </option>
+                    </select>
+                    <select name='district' required=''>
+                        <option value=''>Quận/Huyện</option>
+                    </select>
+                    <select name='ward' required=''>
+                        <option value=''>Phường/Xã</option>
+                    </select>
+                    <input class='billing_address_1' name='' type='hidden' value='' />
+                    <input class='billing_address_2' name='' type='hidden' value='' />
+                </div>
+                <div class='nho-dang-nhap'>
+                    <label><input type='checkbox' name='' /> Tôi đồng ý</label>
+                </div>
+                <div class='input-form'>
+                    <input type='submit' value='Đăng kí' />
+                </div>
+            </form>
+            <div class='signout'>
+                <p>Bạn đã là Thành Viên!!! <a href='#'>Đăng nhập</a> ngay</p>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    function closeForm() { document.getElementById("popupForm").style.display = "none"; }
+</script>

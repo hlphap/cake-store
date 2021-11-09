@@ -6,10 +6,10 @@ const index = catchAsync(async (req, res) => {
         cake: [],
     };
     // Select view to render
-    return res.render('home', {
-        title: '', //  Required Title
-        stylesheet: 'header.css', // Required Stylesheet name from public
-        script: '', // Required Script name from public
+    return res.render('user/home', {
+        title: 'Home', //  Required Title
+        styles: ['header', 'footer'], // Required Stylesheet name from public
+        scripts: ['signin', 'signup'], // Required Script name from public
         data, // Data to handlebars
     });
 });

@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const { TypeCakeSchema } = require('./type-cake.model');
 
 const CakeSchema = mongoose.Schema(
     {
@@ -11,7 +12,7 @@ const CakeSchema = mongoose.Schema(
             required: true,
         },
         typeCake: {
-            type: String,
+            type: TypeCakeSchema,
             required: true,
         },
         description: {

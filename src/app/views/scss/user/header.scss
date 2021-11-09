@@ -1,19 +1,34 @@
 @import 'variables'; //Import _variable de su dung variable
-.navbar-custom{
+@import 'signin';
+@import 'signup';
+
+.navbar-custom {
     background-color: #9f0311;
     text-transform: uppercase;
     font-size: 16px;
 }
 
-.navbar-brand > a, .toggle-container a, .navbar-brand > a:hover{
+.navbar-brand > a,
+.toggle-container a,
+.navbar-brand > a:hover {
     color: #fff;
     text-decoration: none;
 }
 
-.toggle-container{
+.toggle-container {
     transform: translateX(47px);
 }
 
-.user-container button{
+.user-container button {
     color: #fff;
+}
+
+.model-custom {
+    display: none;
+}
+
+.model-show {
+    display: flex;
+    position: fixed;
+    justify-content: center;
 }

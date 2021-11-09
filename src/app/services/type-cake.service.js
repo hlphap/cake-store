@@ -1,15 +1,33 @@
-// const getTypeCakes = async () => {
-//     // return TypeCake.find({});
-// };
+const httpStatus = require('http-status');
+const CustomError = require('../../utils/custom-error');
+const { TypeCake } = require('../models/type-cake.model');
 
-// const getTypeCakeById = async (TypeCakeID) => {
-//     console.log('getTypeCakeById');
-// };
+const getTypeCakes = async () => TypeCake.find({});
 
-// const createTypeCake = async (TypeCake) => {};
+const getTypeCakeById = async (typeCakeId) => TypeCake.findById(typeCakeId);
 
-// const updateTypeCake = async (userID, userBody) => {};
+const createTypeCake = async (typeCakeBody) => TypeCake.create(typeCakeBody);
 
-// const deleteTypeCake = async (userID) => {};
+const updateTypeCake = async (typeCakeId, typeCakeBody) => {
+    const foundTypeCake = await TypeCake.findById(typeCakeId);
+    if (!foundTypeCake) {
+        throw new CustomError(httpStatus.BAD_REQUEST, 'Type Cake not found');
+    }
+    return TypeCake.findByIdAndUpdate(typeCakeId, typeCakeBody, {
+        new: true,
+    });
+};
 
-// module.exports = {};
+const deleteTypeCake = async (typeCakeId) => {
+    const foundTypeCake = await TypeCake.findById(typeCakeId);
+    if (!foundTypeCake) throw new CustomError(httpStatus.NOT_FOUND, 'Type Cake not found');
+    return TypeCake.findByIdAndDelete(typeCakeId);
+};
+
+module.exports = {
+    getTypeCakes,
+    getTypeCakeById,
+    createTypeCake,
+    updateTypeCake,
+    deleteTypeCake,
+};
