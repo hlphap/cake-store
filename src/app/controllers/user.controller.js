@@ -22,9 +22,27 @@ const deleteUser = catchAsync(async (req, res) => {
     res.status(httpStatus.OK).send({ deletedUser });
 });
 
+
+
+const profile = catchAsync(async (req, res) => {
+    // Select view to render
+    return res.render('user/profile', {
+        styles: ['header', 'footer', "profile"], // Required Stylesheet name from public
+        scripts: ['profile'], // Required Script name from public
+    });
+});
+
+
+const user_update = catchAsync(async (req, res) => {
+    return res.json(req.body)
+    
+});
+
 module.exports = {
     getUsers,
     createUser,
     updateUser,
     deleteUser,
+    profile,
+    user_update,
 };
