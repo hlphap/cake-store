@@ -16,6 +16,11 @@ router.post(
     userController.createUser,
 );
 router.put('/:userID', userController.updateUser); // Not complete yet, incomplete validation, service update User
+
+router.get('/profile', homeController.profile)
+
+router.post('/user-update', homeController.user_update)
+
 router.delete(
     '/:userID',
     passport.authenticate('jwt', { session: false }),

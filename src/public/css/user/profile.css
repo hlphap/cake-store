@@ -1,0 +1,10 @@
+.user-information-form, .personal-information {
+  border-left: solid 2px #9f0311; }
+
+.user-image {
+  margin: 0 auto; }
+
+.user-image-avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; }
