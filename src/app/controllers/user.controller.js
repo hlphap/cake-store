@@ -12,31 +12,20 @@ const createUser = catchAsync(async (req, res) => {
     res.status(httpStatus.CREATED).send({ user });
 });
 
-const updateUser = catchAsync(async (req, res) => {
-    const newUser = await userService.updateUser(req.params.userID, req.body);
-    res.status(httpStatus.OK).send({ newUser });
-});
-
 const deleteUser = catchAsync(async (req, res) => {
     const deletedUser = await userService.deleteUser(req.params.userID);
     res.status(httpStatus.OK).send({ deletedUser });
 });
 
-
-
 const profile = catchAsync(async (req, res) => {
     // Select view to render
-    return res.render('user/profile', {
-        styles: ['header', 'footer', "profile"], // Required Stylesheet name from public
+    res.render('user/profile', {
+        styles: ['header', 'footer', 'profile'], // Required Stylesheet name from public
         scripts: ['profile'], // Required Script name from public
     });
 });
 
-
-const user_update = catchAsync(async (req, res) => {
-    return res.json(req.body)
-    
-});
+const updateUser = catchAsync(async (req, res) => res.json(req.body));
 
 module.exports = {
     getUsers,
@@ -44,5 +33,4 @@ module.exports = {
     updateUser,
     deleteUser,
     profile,
-    user_update,
 };

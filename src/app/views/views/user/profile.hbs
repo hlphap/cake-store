@@ -1,6 +1,5 @@
-{{#each user}}
 <div class="pt-4 ml-4 pl-2 user-information">
-    <form method="POST" action="/user-update" class="user-information-form"> 
+    <form method="POST" action="/user-update" class="user-information-form">
         <div class="row">
             <div class="user-image col-5">
                 {{#if this.image}}
@@ -9,7 +8,8 @@
                 <img src="\image\test.jpeg" alt="avatar" class="user-image-avatar d-block m-auto">
                 {{/if}}
                 <input type="file" class="form-control-file d-none" id="image-upload-btn" name="image">
-                <input type="button" id="image-upload-raiser" class="btn btn-danger d-block ml-auto mr-auto mt-4" value="Đổi ảnh đại diện">
+                <input type="button" id="image-upload-raiser" class="btn btn-danger d-block ml-auto mr-auto mt-4"
+                    value="Đổi ảnh đại diện">
             </div>
             <div class="col">
                 <h1></h1>
@@ -19,34 +19,37 @@
                 <div class="form-group">
                     <label for="fullName">Họ tên</label>
                     <input type="text" class="form-control" id="fullName" value="{{this.fullName}}" name="fullName">
-                </div>    
+                </div>
                 <div class="form-group">
                     <label for="birthday">Ngày sinh</label>
                     <input type="date" class="form-control" id="birthday" value="{{this.birthday}}" name="birthday">
                 </div>
-                
+
                 <h3>Thông tin liên hệ</h3>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" value="{{this.email}}" disabled>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                        value="{{this.email}}" disabled>
                 </div>
                 <div class="form-group">
                     <label for="province">Tỉnh thành</label>
-                    <input type="string" class="form-control" id="province" value="{{this.address.province}}" name="province">
+                    <input type="string" class="form-control" id="province" value="{{this.address.province}}"
+                        name="province">
                 </div>
                 <div class="form-group">
                     <label for="district">Quận huyện</label>
-                    <input type="string" class="form-control" id="district" value="{{this.address.district}}" name=district>
+                    <input type="string" class="form-control" id="district" value="{{this.address.district}}"
+                        name=district>
                 </div>
                 <div class="form-group">
                     <label for="ward">Phường xã</label>
                     <input type="string" class="form-control" id="ward" value="{{this.address.ward}}" name="ward">
                 </div>
 
-                <button class="btn btn-secondary" id="cancel-btn" disabled><a class="text-decoration-none" id="cancel-link" style="color: white;">Hủy</a></button>
+                <button class="btn btn-secondary" id="cancel-btn" disabled><a class="text-decoration-none"
+                        id="cancel-link" style="color: white;">Hủy</a></button>
                 <button type="submit" class="btn btn-danger" id="save-btn" disabled>Lưu</button>
             </div>
         </div>
     </form>
 </div>
-{{/each}}

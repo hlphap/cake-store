@@ -7,6 +7,7 @@ const validate = require('../../middlewares/validate');
 
 const router = express.Router();
 
+router.get('/profile', userController.profile);
 router.get('/', passport.authenticate('jwt', { session: false }), checkRole('ADMIN'), userController.getUsers);
 router.post(
     '/',
@@ -17,9 +18,7 @@ router.post(
 );
 router.put('/:userID', userController.updateUser); // Not complete yet, incomplete validation, service update User
 
-router.get('/profile', homeController.profile)
-
-router.post('/user-update', homeController.user_update)
+router.post('/user-update', userController.updateUser);
 
 router.delete(
     '/:userID',
