@@ -16,7 +16,24 @@ const index = catchAsync(async (req, res) => {
         ],
     });
 });
+const changePassword = catchAsync(async (req, res) => {
+    res.render('admin/changePassword', {
+        layout: 'admin',
+        styles: ['sidebar', 'layout-admin', 'breadcrumb'],
+        breadcrumbsItem: [
+            {
+                title: 'Quản lý người dùng',
+                href: '#',
+            },
+            {
+                title: 'Thay đổi mật khẩu',
+                href: '#',
+            },
+        ],
+    });
+});
 
 module.exports = {
     index,
+    changePassword,
 };
