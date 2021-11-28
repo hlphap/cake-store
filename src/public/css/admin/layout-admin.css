@@ -20,4 +20,5 @@ html {
 
 .container-content {
   border-radius: 10px;
+  padding: 18px;
   height: calc(100vh - 86px); }

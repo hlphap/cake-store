@@ -17,16 +17,33 @@ const index = catchAsync(async (req, res) => {
     });
 });
 const changePassword = catchAsync(async (req, res) => {
-    res.render('admin/changePassword', {
+    res.render('admin/change-password', {
         layout: 'admin',
-        styles: ['sidebar', 'layout-admin', 'breadcrumb'],
+        styles: ['sidebar', 'layout-admin', 'breadcrumb', 'change-password'],
         breadcrumbsItem: [
             {
                 title: 'Quản lý người dùng',
                 href: '#',
             },
             {
-                title: 'Thay đổi mật khẩu',
+                title: 'Đổi mật khẩu',
+                href: '#',
+            },
+        ],
+    });
+});
+
+const info = catchAsync(async (req, res) => {
+    res.render('admin/info', {
+        layout: 'admin',
+        styles: ['sidebar', 'layout-admin', 'breadcrumb', 'info'],
+        breadcrumbsItem: [
+            {
+                title: 'Quản lý người dùng',
+                href: '#',
+            },
+            {
+                title: 'Thông tin cá nhân',
                 href: '#',
             },
         ],
@@ -36,4 +53,5 @@ const changePassword = catchAsync(async (req, res) => {
 module.exports = {
     index,
     changePassword,
+    info,
 };
