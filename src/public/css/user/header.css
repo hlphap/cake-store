@@ -1,10 +1,10 @@
-section {
-  position: relative;
+#login-form {
+  position: absolute;
   width: 100%;
   height: 100vh;
-  display: flex; }
+  display: none; }
 
-section .container {
+#login-form .container {
   position: absolute;
   top: 50px;
   left: 38%;
@@ -20,29 +20,29 @@ section .container {
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2); }
 
-section .close-btn {
+#login-form .close-btn {
   position: relative;
   left: 340px;
   cursor: pointer; }
 
-section .container .form {
+#login-form .container .form {
   width: 350px;
   font-weight: 600; }
 
-section .container .form h2 {
+#login-form .container .form h2 {
   font-weight: 700;
   font-size: 1.5em;
   letter-spacing: 1px;
   text-align: center; }
 
-section .container .form p {
+#login-form .container .form p {
   text-align: center;
   font-weight: 300; }
 
-section .container .form .input-form {
+#login-form .container .form .input-form {
   margin-bottom: 15px; }
 
-section .container .form .input-form input {
+#login-form .container .form .input-form input {
   width: 100%;
   padding: 10px 20px;
   outline: none;
@@ -51,16 +51,16 @@ section .container .form .input-form input {
   background: transparent;
   border-radius: 10px; }
 
-section .container .form .input-form input[type='text'] {
+#login-form .container .form .input-form input[type='text'] {
   padding-left: 40px; }
 
-section .container .form .input-form input[type='password'] {
+#login-form .container .form .input-form input[type='password'] {
   padding-left: 40px; }
 
-section .container .form .input-form {
+#login-form .container .form .input-form {
   position: relative; }
 
-section .container .form .input-form i {
+#login-form .container .form .input-form i {
   position: absolute;
   left: 0;
   top: 8px;
@@ -68,7 +68,7 @@ section .container .form .input-form i {
   color: #aaa;
   transition: 0.3s; }
 
-section .container .form .input-form input[type='submit'] {
+#login-form .container .form .input-form input[type='submit'] {
   background: #9f0311;
   color: #fff;
   outline: none;
@@ -76,33 +76,33 @@ section .container .form .input-form input[type='submit'] {
   font-weight: 500;
   cursor: pointer; }
 
-section .container .form .input-form input[type='submit']:hover {
+#login-form .container .form .input-form input[type='submit']:hover {
   background: #bb0303; }
 
-section .container .form .nho-dang-nhap {
+#login-form .container .form .nho-dang-nhap {
   margin-bottom: 10px;
   font-size: 12px; }
 
-section .container .form .nho-dang-nhap a {
+#login-form .container .form .nho-dang-nhap a {
   color: #9f0311;
   float: right; }
 
-section .container .form .input-form p a {
+#login-form .container .form .input-form p a {
   color: #9f0311; }
 
-section .container .form .line {
+#login-form .container .form .line {
   width: 100%;
   text-align: center;
   border-bottom: 0.5px solid;
   line-height: 0.1em;
   margin: 10px 0 20px; }
 
-section .container .form .line span {
+#login-form .container .form .line span {
   background: #fff;
   padding: 0 10px;
   font-size: 14px; }
 
-section .container .form .icon-login {
+#login-form .container .form .icon-login {
   cursor: pointer;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -111,13 +111,13 @@ section .container .form .icon-login {
   gap: 25px;
   border: 1px; }
 
-section .container .form .icon-login img {
+#login-form .container .form .icon-login img {
   width: 15%;
   margin-right: 8px;
   border: 1px;
   margin-top: -3px; }
 
-section .container .form .icon-login button {
+#login-form .container .form .icon-login button {
   border: 0.5px solid;
   background-color: #fff;
   border-radius: 8px;
@@ -125,20 +125,20 @@ section .container .form .icon-login button {
   font-weight: 600;
   margin-bottom: 10px; }
 
-section .container .form .signout p {
+#login-form .container .form .signout p {
   font-size: 14px;
   font-weight: 600; }
 
-section .container .form .signout a {
+#login-form .container .form .signout a {
   color: #9f0311; }
 
-section {
-  position: relative;
+#signup-form {
+  position: absolute;
   width: 100%;
   height: 100vh;
-  display: flex; }
+  display: none; }
 
-section .container {
+#signup-form .container {
   position: absolute;
   top: 10px;
   left: 38%;
@@ -154,34 +154,34 @@ section .container {
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2); }
 
-section .close-btn {
+#signup-form .close-btn {
   position: relative;
   left: 340px;
   cursor: pointer; }
 
-section .container .form {
+#signup-form .container .form {
   width: 350px;
   font-weight: 600; }
 
-section .container .form h2 {
+#signup-form .container .form h2 {
   font-weight: 700;
   font-size: 1.5em;
   letter-spacing: 1px;
   text-align: center;
   margin-bottom: 20px; }
 
-section .container .form h3 {
+#signup-form .container .form h3 {
   font-size: 1em;
   font-weight: 600; }
 
-section .container .form p {
+#signup-form .container .form p {
   text-align: center;
   font-weight: 300; }
 
-section .container .form .input-form {
+#signup-form .container .form .input-form {
   margin-bottom: 15px; }
 
-section .container .form .input-form select:nth-child(1) {
+#signup-form .container .form .input-form select:nth-child(1) {
   width: 47%;
   padding: 10px 20px;
   outline: none;
@@ -190,7 +190,7 @@ section .container .form .input-form select:nth-child(1) {
   background: transparent;
   border-radius: 10px; }
 
-section .container .form .input-form select:nth-child(2) {
+#signup-form .container .form .input-form select:nth-child(2) {
   width: 47%;
   padding: 10px 20px;
   outline: none;
@@ -200,7 +200,7 @@ section .container .form .input-form select:nth-child(2) {
   border-radius: 10px;
   float: right; }
 
-section .container .form .input-form select:nth-child(3) {
+#signup-form .container .form .input-form select:nth-child(3) {
   margin-top: 15px;
   width: 100%;
   padding: 10px 20px;
@@ -210,7 +210,7 @@ section .container .form .input-form select:nth-child(3) {
   background: transparent;
   border-radius: 10px; }
 
-section .container .form .input-form input {
+#signup-form .container .form .input-form input {
   width: 100%;
   padding: 10px 20px;
   outline: none;
@@ -219,7 +219,7 @@ section .container .form .input-form input {
   background: transparent;
   border-radius: 10px; }
 
-section .container .form .input-form input[type='submit'] {
+#signup-form .container .form .input-form input[type='submit'] {
   background: #9f0311;
   color: #fff;
   outline: none;
@@ -227,25 +227,25 @@ section .container .form .input-form input[type='submit'] {
   font-weight: 500;
   cursor: pointer; }
 
-section .container .form .input-form input[type='submit']:hover {
+#signup-form .container .form .input-form input[type='submit']:hover {
   background: #bb0303; }
 
-section .container .form .nho-dang-nhap {
+#signup-form .container .form .nho-dang-nhap {
   margin-bottom: 10px;
   font-size: 16px; }
 
-section .container .form .nho-dang-nhap a {
+#signup-form .container .form .nho-dang-nhap a {
   color: #9f0311;
   float: right; }
 
-section .container .form .input-form p a {
+#signup-form .container .form .input-form p a {
   color: #9f0311; }
 
-section .container .form .signout p {
+#signup-form .container .form .signout p {
   font-size: 14px;
   font-weight: 600; }
 
-section .container .form .signout a {
+#signup-form .container .form .signout a {
   color: #9f0311; }
 
 .navbar-custom {
@@ -262,13 +262,86 @@ section .container .form .signout a {
 .toggle-container {
   transform: translateX(47px); }
 
+.user-container-nav {
+  margin: auto 0; }
+
+.user-container-nav > li {
+  display: inline-block;
+  list-style-type: none; }
+
 .user-container button {
   color: #fff; }
 
-.model-custom {
-  display: none; }
+.user-container > div {
+  display: inline-block; }
 
-.model-show {
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; }
+
+.user-nav {
+  display: none;
+  width: 200px;
+  list-style-type: none;
+  background-color: #fff;
+  margin: 0;
+  padding: 5px;
+  z-index: 10; }
+
+.user-nav li {
+  margin: 10px; }
+
+.user-nav li a {
+  display: block;
+  text-decoration: none;
+  text-transform: none; }
+
+.user-nav li div p, .user-nav li div h6 {
+  margin: 0;
+  text-transform: none; }
+
+.user-nav li div p {
+  font-size: 12px; }
+
+.user-container-infor div {
+  display: inline-block; }
+
+.user-container-nav-item {
+  position: relative; }
+
+.user-container-nav-item:hover .user-nav {
+  display: block;
+  position: absolute;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  right: -30px; }
+
+.user-container-login, .user-container-signup {
+  position: relative; }
+
+.user-container-login:hover #login-form {
   display: flex;
-  position: fixed;
-  justify-content: center; }
+  right: 250px;
+  top: -3px; }
+
+#login-form::before {
+  position: absolute;
+  content: '';
+  height: 20px;
+  left: 35px;
+  top: 34px;
+  width: 390px;
+  display: block; }
+
+#signup-form::before {
+  position: absolute;
+  content: '';
+  height: 20px;
+  left: 35px;
+  width: 390px;
+  display: block; }
+
+.user-container-signup:hover #signup-form {
+  display: flex;
+  right: 350px; }
