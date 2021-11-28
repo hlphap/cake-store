@@ -6,7 +6,7 @@
     "author": "Team dev cakes",
     "license": "MIT",
     "scripts": {
-        "start": "node app.js",
+        "start": "node src/app.js",
         "dev": "cross-env NODE_ENV=development nodemon src/app.js",
         "prettier": "prettier --config .prettierrc --write \"./**/*.{ts,js,css,scss,json,md}\"",
         "lint": "eslint --config .eslintrc.json --max-warnings 0 --ext .js,ts src",
