@@ -1,10 +1,10 @@
-section {
-  position: relative;
+#signup-form {
+  position: absolute;
   width: 100%;
   height: 100vh;
-  display: flex; }
+  display: none; }
 
-section .container {
+#signup-form .container {
   position: absolute;
   top: 10px;
   left: 38%;
@@ -20,34 +20,34 @@ section .container {
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2); }
 
-section .close-btn {
+#signup-form .close-btn {
   position: relative;
   left: 340px;
   cursor: pointer; }
 
-section .container .form {
+#signup-form .container .form {
   width: 350px;
   font-weight: 600; }
 
-section .container .form h2 {
+#signup-form .container .form h2 {
   font-weight: 700;
   font-size: 1.5em;
   letter-spacing: 1px;
   text-align: center;
   margin-bottom: 20px; }
 
-section .container .form h3 {
+#signup-form .container .form h3 {
   font-size: 1em;
   font-weight: 600; }
 
-section .container .form p {
+#signup-form .container .form p {
   text-align: center;
   font-weight: 300; }
 
-section .container .form .input-form {
+#signup-form .container .form .input-form {
   margin-bottom: 15px; }
 
-section .container .form .input-form select:nth-child(1) {
+#signup-form .container .form .input-form select:nth-child(1) {
   width: 47%;
   padding: 10px 20px;
   outline: none;
@@ -56,7 +56,7 @@ section .container .form .input-form select:nth-child(1) {
   background: transparent;
   border-radius: 10px; }
 
-section .container .form .input-form select:nth-child(2) {
+#signup-form .container .form .input-form select:nth-child(2) {
   width: 47%;
   padding: 10px 20px;
   outline: none;
@@ -66,7 +66,7 @@ section .container .form .input-form select:nth-child(2) {
   border-radius: 10px;
   float: right; }
 
-section .container .form .input-form select:nth-child(3) {
+#signup-form .container .form .input-form select:nth-child(3) {
   margin-top: 15px;
   width: 100%;
   padding: 10px 20px;
@@ -76,7 +76,7 @@ section .container .form .input-form select:nth-child(3) {
   background: transparent;
   border-radius: 10px; }
 
-section .container .form .input-form input {
+#signup-form .container .form .input-form input {
   width: 100%;
   padding: 10px 20px;
   outline: none;
@@ -85,7 +85,7 @@ section .container .form .input-form input {
   background: transparent;
   border-radius: 10px; }
 
-section .container .form .input-form input[type='submit'] {
+#signup-form .container .form .input-form input[type='submit'] {
   background: #9f0311;
   color: #fff;
   outline: none;
@@ -93,23 +93,23 @@ section .container .form .input-form input[type='submit'] {
   font-weight: 500;
   cursor: pointer; }
 
-section .container .form .input-form input[type='submit']:hover {
+#signup-form .container .form .input-form input[type='submit']:hover {
   background: #bb0303; }
 
-section .container .form .nho-dang-nhap {
+#signup-form .container .form .nho-dang-nhap {
   margin-bottom: 10px;
   font-size: 16px; }
 
-section .container .form .nho-dang-nhap a {
+#signup-form .container .form .nho-dang-nhap a {
   color: #9f0311;
   float: right; }
 
-section .container .form .input-form p a {
+#signup-form .container .form .input-form p a {
   color: #9f0311; }
 
-section .container .form .signout p {
+#signup-form .container .form .signout p {
   font-size: 14px;
   font-weight: 600; }
 
-section .container .form .signout a {
+#signup-form .container .form .signout a {
   color: #9f0311; }
