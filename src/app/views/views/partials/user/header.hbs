@@ -36,13 +36,7 @@
                     </ul>
                 </div>
             </div>
-            <div class='user-container'>
-                <a href='#' style='margin-right:16px'><img src='/image/Favorite Cart.png' alt='' /></a>
-                <button id='myButton' class='btn' style='width:80px'>Login</button>
-                <button class='btn' style='width:80px'>Registry</button>
-            </div>
-        </div>
-        {{#if user}}
+ {{#if user}}
         <ul class='user-container-nav mr-5'>
             <li>
                 <a href='#' style='margin-right:16px'><img src='/image/Favorite Cart.png' alt='' /></a>
@@ -79,9 +73,6 @@
         </ul>
         {{else}}
         <div class='user-container'>
-            <div>
-                <a href='#' style='margin-right:16px'><img src='/image/Favorite Cart.png' alt='' /></a>
-            </div>
             <div class="user-container-login">
                 <button id="loginBtn" class='btn' style='width:80px'>Login</button>
                 {{>user/signin}}
@@ -92,6 +83,6 @@
             </div>
         </div>
         {{/if}}
+        </div>
     </div>
-
 </nav>
