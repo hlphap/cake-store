@@ -4,6 +4,9 @@ html {
 .container-custom {
   background-color: #e9eaea; }
 
+.container-sidebar {
+  height: 100vh; }
+
 .container-breadcrumb,
 .container-sidebar,
 .container-content {
@@ -20,5 +23,4 @@ html {
 
 .container-content {
   border-radius: 10px;
-  padding: 18px;
-  height: calc(100vh - 86px); }
+  padding: 18px; }
