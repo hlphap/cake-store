@@ -1,0 +1,249 @@
+<style>
+    .headerTitle {
+        font-weight: bold;
+        font-size: large;
+        margin-top: 1.2rem;
+        margin-bottom: 7px;
+    }
+
+    .allDropdowStyle {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .dropComponentStyle {
+        flex-direction: column;
+        margin: 0 3.5%;
+    }
+
+    .dropDownStyle {
+        border-radius: 6px;
+        border-color: black;
+        border-width: 2px;
+        box-sizing: content-box;
+        padding: 5px 4px;
+        font-weight: normal;
+    }
+
+    .dropDownStyle:hover {
+        border-color: #9F0311;
+    }
+
+    .buttonSearch {
+        margin-top: 70%;
+        width: 85px;
+        border-radius: 6px;
+        background-color: #9F0311;
+        color: white;
+    }
+
+    .buttonSearch:hover {
+        box-shadow: 1px 1px 4px 1px grey;
+        color: black;
+    }
+
+    .styleList {
+        border-style: solid;
+        border-width: 1px 1px;
+        width: 92%;
+        height: 65%;
+        border-radius: 6px;
+        margin-top: 24px;
+        margin-left: 48px;
+        margin-right: 48px;
+        position: relative;
+    }
+
+    .addButton {
+        position: absolute;
+        justify-content: flex-end;
+        right: 12px;
+        bottom: 12px;
+        border-radius: 6px;
+        align-items: flex-end;
+        justify-content: flex-end;
+        background-color: #9F0311;
+        color: white;
+    }
+
+    .addButton:hover {
+        box-shadow: 1px 1px 4px 1px grey;
+        color: black;
+    }
+
+    .rowDataStyle {
+        flex-direction: row;
+        display: flex;
+
+    }
+
+    .rowDataStyle:hover {
+        border-width: 2px;
+        border-color: red;
+        border-style: solid;
+    }
+
+    .tableStyle {
+
+        width: 92%;
+        left: 12px;
+
+    }
+
+    .optionDropDown {
+        font-weight: 500;
+    }
+
+    .optionDropDown :hover {
+        background-color: #9F0311;
+        color: white;
+    }
+
+    .styleList tbody tr {}
+
+    .styleList tbody td {
+        width: 21%;
+
+    }
+
+    .styleList thead th {
+        width: 21%;
+    }
+
+    .styleList thead {
+        display: block;
+    }
+
+    .styleList tbody {
+        display: block;
+        height: 24rem;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        font-weight: 500;
+    }
+
+    .dropbtn {}
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #f9f9f9;
+        min-width: 120;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: #9F0311;
+        padding: 3px 12px;
+        text-decoration: none;
+        display: block;
+        font-weight: bold;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #9F0311;
+        color: white;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        color: white;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #9F0311;
+        width: 18px;
+        height: 18px;
+        color: white;
+    }
+</style>
+<div>
+    <div class="allDropdowStyle">
+        <div class="dropcomponentStyle">
+            <p class="headerTitle">Tên bánh</p>
+            <select name="nameCake" id="nameCake" class="dropDownStyle">
+                <option value="" disabled selected>Select your option</option>
+                <option class="optionDropDown" value="A-Z">A-Z</option>
+                <option class="optionDropDown" value="Z-A">Z-A</option>
+            </select>
+        </div>
+        <div class="dropcomponentStyle">
+            <p class="headerTitle">Loại bánh</p>
+            <select name="typeCake" id="typeCake" class="dropDownStyle">
+                <option value="" disabled selected>Select your option</option>
+                <option class="optionDropDown" value="banhman">Bánh ngọt</option>
+                <option class="optionDropDown" value="banhman">Bánh mặn</option>
+                <option class="optionDropDown" value="banhkem">Bánh kem</option>
+                <option class="optionDropDown" value="banhbonglan">Bánh bông lan</option>
+            </select>
+        </div>
+        <div class="dropcomponentStyle">
+            <p class="headerTitle">Giá</p>
+            <select name="price" id="price" class="dropDownStyle">
+                <option value="" disabled selected>Select your option</option>
+                <option class="optionDropDown" value="tangdan">Tăng dần</option>
+                <option class="optionDropDown" value="giamdan">Giảm dần</option>
+            </select>
+        </div>
+        <div class="dropcomponentStyle">
+            <p class="headerTitle">Ngày thêm vào</p>
+            <select name="dateAdd" id="dateAdd" class="dropDownStyle">
+                <option value="" disabled selected>Select your option</option>
+                <option class="optionDropDown" value="moinhat">Mới nhất</option>
+                <option class="optionDropDown" value="cunhat">Cũ nhất</option>
+            </select>
+        </div>
+        <div class="dropcomponentStyle">
+            <button class="buttonSearch">
+                Tìm kiếm
+            </button>
+        </div>
+    </div>
+    <div class="styleList">
+        <table class="table table-hover tableStyle">
+            <thead>
+                <tr>
+                    <th scope="col">STT</th>
+                    <th scope="col">Mã tin</th>
+                    <th scope="col">Tên bánh</th>
+                    <th scope="col">Giá</th>
+                    <th scope="col">Ngày thêm vào</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each data}}
+                <tr>
+                    <td>1</th>
+                    <td style="color: #9F0311;">{{this.name}}</td>
+                    <td style="color: #9F0311;">{{this.price}}</td>
+                    <td>{{this.typeCake.name}}</td>
+                    <td>Ngày thêm vào</td>
+                    <td>
+                        <div class="dropdown" style="float:right;">
+                            <img class="dropbtn" src='/image/3dot.png' alt='' width="18" height="18" />
+                            <div class="dropdown-content">
+                                <a href="#">Chỉnh sửa</a>
+                                <a href="#">Xóa</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+
+        <button class="addButton">
+            Thêm bánh
+        </button>
+    </div>
+    <br />
+</div>

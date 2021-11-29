@@ -32,8 +32,116 @@ const changePassword = catchAsync(async (req, res) => {
         ],
     });
 });
+const managerCake = catchAsync(async (req, res) => {
+    const data = [
+        {
+            name:"cake1",
+            price:123000,
+            typeCake:{
+                name:"banh ngot"
+            },
+            description:"123123"
+        },
+        {
+            name:"cake2",
+            price:123000,
+            typeCake:{
+                name:"banh ngot"
+            },
+            description:"123123"
+        },
+        {
+            name:"cake3",
+            price:123000,
+            typeCake:{
+                name:"banh ngot"
+            },
+            description:"123123"
+        },
+        {
+            name:"cake4",
+            price:123000,
+            typeCake:{
+                name:"banh ngot"
+            },
+            description:"123123"
+        },
+        {
+            name:"cake4",
+            price:123000,
+            typeCake:{
+                name:"banh ngot"
+            },
+            description:"123123"
+        },
+        {
+            name:"cake4",
+            price:123000,
+            typeCake:{
+                name:"banh ngot"
+            },
+            description:"123123"
+        },
+        {
+            name:"cake4",
+            price:123000,
+            typeCake:{
+                name:"banh ngot"
+            },
+            description:"123123"
+        },
+        {
+            name:"cake4",
+            price:123000,
+            typeCake:{
+                name:"banh ngot"
+            },
+            description:"123123"
+        },
+        {
+            name:"cake4",
+            price:123000,
+            typeCake:{
+                name:"banh ngot"
+            },
+            description:"123123"
+        },
+        {
+            name:"cake4",
+            price:123000324234,
+            typeCake:{
+                name:"banh ngot"
+            },
+            description:"123123"
+        },
+        {
+            name:"cake4",
+            price:123000,
+            typeCake:{
+                name:"banh ngot"
+            },
+            description:"123123"
+        },
+    ]
+    res.render('admin/managerCake', {
+        data,
+        layout: 'admin',
+        styles: ['sidebar', 'layout-admin', 'breadcrumb'],
+        breadcrumbsItem: [
+            {
+                title: 'Quản lý dịch vụ',
+                href: '#',
+            },
+            {
+                title: 'Quản lý bánh',
+                href: '#',
+            },
+        ],
+    });
+});
 
 module.exports = {
     index,
     changePassword,
+    managerCake,
 };
