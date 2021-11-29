@@ -1,44 +1,87 @@
 <nav class='navbar navbar-expand-lg navbar-default container-fluid navbar-custom'>
-    <div class='container-fluid d-flex justify-content-between'>
-        <div class='navbar-brand ml-2'>
-            <a class='' href='/'>Cake Food</a>
-        </div>
-        <div class='toggle-container'>
-            <button
-                class='navbar-toggler'
-                type='button'
-                data-bs-toggle='collapse'
-                data-bs-target='#navbar-toggle-content'
-                aria-controls='navbarSupportedContent'
-                aria-expanded='false'
-                aria-label='Toggle navigation'
-            >
-                <span class='navbar-toggler-icon'></span>
-            </button>
-            <div class='collapse navbar-collapse' id='navbar-toggle-content'>
-                <ul class='navbar-nav me-auto mb-2 mb-lg-0'>
-                    <li class='nav-item'>
-                        <a class='nav-link' aria-current='page' href='/'>Home</a>
+    <div class='content-wrap'>
+        <div class='container-fluid d-flex justify-content-between'>
+            <div class='navbar-brand ml-2'>
+                <a class='' href='/'>Cake Food</a>
+            </div>
+            <div class='toggle-container'>
+                <button
+                    class='navbar-toggler'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#navbar-toggle-content'
+                    aria-controls='navbarSupportedContent'
+                    aria-expanded='false'
+                    aria-label='Toggle navigation'
+                >
+                    <span class='navbar-toggler-icon'></span>
+                </button>
+                <div class='collapse navbar-collapse' id='navbar-toggle-content'>
+                    <ul class='navbar-nav me-auto mb-2 mb-lg-0'>
+                        <li class='nav-item'>
+                            <a class='nav-link' aria-current='page' href='/'>Home</a>
+                        </li>
+                        <li class='nav-item'>
+                            <a class='nav-link' href='#'>Menu</a>
+                        </li>
+                        <li class='nav-item'>
+                            <a class='nav-link' href='/about-us'>About Us</a>
+                        </li>
+                        <li class='nav-item'>
+                            <a class='nav-link' href='#'>Blog</a>
+                        </li>
+                        <li class='nav-item'>
+                            <a class='nav-link' href='#'>Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+ {{#if user}}
+        <ul class='user-container-nav mr-5'>
+            <li>
+                <a href='#' style='margin-right:16px'><img src='/image/Favorite Cart.png' alt='' /></a>
+            </li>
+            <li class='user-container-nav-item'>
+                <img src="\image\UserAccount.png" alt="User Account">
+                <ul class="user-nav">
+                    <li class="user-container-infor m-auto">
+                        <div>
+                            <img src="\image\UserAccount.png" alt="User Account">
+                        </div>
+                        <div class="dmm">
+                            <h6>Minh</h6>
+                            <p>minh@gmail.com</p>
+                        </div>
                     </li>
-                    <li class='nav-item'>
-                        <a class='nav-link' href='#'>Menu</a>
+                    <hr>
+                    <li>
+                        <a href="">Viết Blog</a>
+                        <a href="">Bài viết của tôi</a>
                     </li>
-                    <li class='nav-item'>
-                        <a class='nav-link' href='#'>About Us</a>
+                    <hr>
+                    <li>
+                        <a href="">Lịch sử mua hàng</a>
                     </li>
-                    <li class='nav-item'>
-                        <a class='nav-link' href='#'>Blog</a>
-                    </li>
-                    <li class='nav-item'>
-                        <a class='nav-link' href='#'>Contact</a>
+                    <hr>
+                    <li>
+                        <a href="">Thông tin cá nhân</a>
+                        <a href="" style="color: red;">Đăng xuất</a>
                     </li>
                 </ul>
+            </li>
+        </ul>
+        {{else}}
+        <div class='user-container'>
+            <div class="user-container-login">
+                <button id="loginBtn" class='btn' style='width:80px'>Login</button>
+                {{>user/signin}}
+            </div>
+            <div class="user-container-signup">
+                <button id="registryBtn" class='btn' style='width:80px'>Registry</button>
+                {{>user/signup}}
             </div>
         </div>
-        <div class='user-container'>
-            <a href='#' style='margin-right:16px'><img src='/image/Favorite Cart.png' alt='' /></a>
-            <button id='myButton' class='btn' style='width:80px'>Login</button>
-            <button class='btn' style='width:80px'>Registry</button>
+        {{/if}}
         </div>
     </div>
 </nav>

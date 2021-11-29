@@ -1,41 +1,38 @@
-<section>
+<div id="signup-form">
     <div class='container' id='popupForm'>
         <div class='close-btn' onclick='closeForm()'> x </div>
         <div class='form'>
             <h2>ĐĂNG KÍ</h2>
-            <form>
+            <form method='post' action='/auth/signup'>
                 <h3>Thông tin tài khoản</h3>
                 <div class='input-form'>
-                    <input type='text' placeholder='Tên đăng nhập/Email' />
+                    <input type='text' name='email' placeholder='Tên đăng nhập/Email' required/>
                 </div>
                 <div class='input-form'>
-                    <input type='password' placeholder='Mật khẩu' />
+                    <input type='password' name='password' placeholder='Mật khẩu' required />
                 </div>
                 <div class='input-form'>
-                    <input type='password' placeholder=' Nhập lại Mật khẩu' />
+                    <input type='password' name='repassword' placeholder=' Nhập lại Mật khẩu' required />
                 </div>
                 <h3>Thông tin cá nhân</h3>
                 <div class='input-form'>
-                    <input type='text' placeholder='Tên đầy đủ' />
+                    <input type='text' placeholder='Tên đầy đủ' name='fullname'/>
                 </div>
                 <div class='input-form'>
-                    <input type='date' placeholder='Ngày sinh' />
+                    <input type='date' placeholder='Ngày sinh' name='birthday' />
                 </div>
                 <div class='input-form'>
-                    <select name='provinces' required=''>
+                    <select name='provinces' required>
                         <option value=''>Tỉnh/Thành </option>
                     </select>
-                    <select name='district' required=''>
+                    <select name='district' required>
                         <option value=''>Quận/Huyện</option>
                     </select>
-                    <select name='ward' required=''>
+                    <select name='ward' required>
                         <option value=''>Phường/Xã</option>
                     </select>
                     <input class='billing_address_1' name='' type='hidden' value='' />
                     <input class='billing_address_2' name='' type='hidden' value='' />
-                </div>
-                <div class='nho-dang-nhap'>
-                    <label><input type='checkbox' name='' /> Tôi đồng ý</label>
                 </div>
                 <div class='input-form'>
                     <input type='submit' value='Đăng kí' />
@@ -46,7 +43,7 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 <script>
     function closeForm() { document.getElementById("popupForm").style.display = "none"; }
 </script>

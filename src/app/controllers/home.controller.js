@@ -8,7 +8,7 @@ const index = catchAsync(async (req, res) => {
     // Select view to render
     return res.render('user/home', {
         title: 'Home', //  Required Title
-        styles: ['header', 'footer'], // Required Stylesheet name from public
+        styles: ['layout-user', 'header', 'footer'], // Required Stylesheet name from public
         scripts: ['signin', 'signup'], // Required Script name from public
         data, // Data to handlebars
     });
