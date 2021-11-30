@@ -3,7 +3,7 @@ const catchAsync = require('../../utils/catch-async');
 const index = catchAsync(async (req, res) =>
     res.render('user/about-us', {
         title: 'About', //  Required Title
-        styles: ['layout-user', 'header', 'footer'], // Required Stylesheet name from public
+        styles: ['layout-user', 'header', 'footer', 'about-us'], // Required Stylesheet name from public
         scripts: ['signin', 'signup'], // Required Script name from public
     }),
 );
