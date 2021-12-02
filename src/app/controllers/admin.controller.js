@@ -157,9 +157,74 @@ const managerCake = catchAsync(async (req, res) => {
     });
 });
 
+const managerTypeCake = catchAsync(async (req, res) => {
+    const data = [
+        {
+            name:"Bánh ngọt",
+            
+        },
+        {
+            name:"Bánh ngọt2",
+            
+        },
+        {
+            name:"Bánh ngọt3",
+            
+        },
+        {
+            name:"Bánh ngọt4",
+           
+        },
+        {
+            name:"Bánh ngọt5",
+           
+        },
+        {
+            name:"Bánh ngọt6",
+           
+        },
+        {
+            name:"Bánh ngọt7",
+        
+        },
+        {
+            name:"Bánh ngọt8",
+           
+        },
+        {
+            name:"Bánh ngọt9",
+            
+        },
+        {
+            name:"Bánh kem",
+           
+        },
+        {
+            name:"Bánh kem2",
+            
+        },
+    ]
+    res.render('admin/managerTypeCake', {
+        data,
+        layout: 'admin',
+        styles: ['sidebar', 'layout-admin', 'breadcrumb'],
+        breadcrumbsItem: [
+            {
+                title: 'Quản lý dịch vụ',
+                href: '#',
+            },
+            {
+                title: 'Quản lý loại bánh',
+                href: '#',
+            },
+        ],
+    });
+});
+
 module.exports = {
     index,
     changePassword,
     managerCake,
+    managerTypeCake,
     info,
 };
