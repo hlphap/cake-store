@@ -282,7 +282,7 @@
 
 .user-nav {
   display: none;
-  width: 200px;
+  width: 250px;
   list-style-type: none;
   background-color: #fff;
   margin: 0;
@@ -292,10 +292,12 @@
 .user-nav li {
   margin: 10px; }
 
+.user-container-nav-item a,
 .user-nav li a {
   display: block;
   text-decoration: none;
-  text-transform: none; }
+  text-transform: none;
+  color: #000; }
 
 .user-nav li div p, .user-nav li div h6 {
   margin: 0;
@@ -304,8 +306,14 @@
 .user-nav li div p {
   font-size: 12px; }
 
-.user-container-infor div {
-  display: inline-block; }
+.mini-user {
+  display: block;
+  margin-left: 10px;
+  overflow: hidden; }
+
+.user-container-infor {
+  display: flex;
+  margin-top: 10px; }
 
 .user-container-nav-item {
   position: relative; }
@@ -319,29 +327,3 @@
 
 .user-container-login, .user-container-signup {
   position: relative; }
-
-.user-container-login:hover #login-form {
-  display: flex;
-  right: 250px;
-  top: -3px; }
-
-#login-form::before {
-  position: absolute;
-  content: '';
-  height: 20px;
-  left: 35px;
-  top: 34px;
-  width: 390px;
-  display: block; }
-
-#signup-form::before {
-  position: absolute;
-  content: '';
-  height: 20px;
-  left: 35px;
-  width: 390px;
-  display: block; }
-
-.user-container-signup:hover #signup-form {
-  display: flex;
-  right: 350px; }

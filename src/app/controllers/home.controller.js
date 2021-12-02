@@ -9,7 +9,7 @@ const index = catchAsync(async (req, res) => {
     return res.render('user/home', {
         title: 'Home', //  Required Title
         styles: ['layout-user', 'header', 'footer'], // Required Stylesheet name from public
-        scripts: ['signin', 'signup'], // Required Script name from public
+        scripts: ['signin', 'signup', 'header'], // Required Script name from public
         data, // Data to handlebars
     });
 });

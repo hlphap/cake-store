@@ -1,21 +1,8 @@
 <div class="pt-4 ml-4 pl-2 user-information">
     <form method="POST" action="/user-update" class="user-information-form">
         <div class="row">
-            <div class="user-image col-5">
-                {{#if this.image}}
-                <img src="{{this.image}}" alt="avatar" class="user-image-avatar d-block m-auto">
-                {{else}}
-                <img src="\image\test.jpeg" alt="avatar" class="user-image-avatar d-block m-auto">
-                {{/if}}
-                <input type="file" class="form-control-file d-none" id="image-upload-btn" name="image">
-                <input type="button" id="image-upload-raiser" class="btn btn-danger d-block ml-auto mr-auto mt-4"
-                    value="Đổi ảnh đại diện">
-            </div>
-            <div class="col">
-                <h1></h1>
-            </div>
-            <div class="personal-information col-5 mr-3">
-                <h3>Thông tin cá nhân</h3>
+            <div class="personal-information col-3 ml-4 mt-2">
+                <h4>Thông tin cá nhân</h4>
                 <div class="form-group">
                     <label for="fullName">Họ tên</label>
                     <input type="text" class="form-control" id="fullName" value="{{this.fullName}}" name="fullName">
@@ -25,7 +12,7 @@
                     <input type="date" class="form-control" id="birthday" value="{{this.birthday}}" name="birthday">
                 </div>
 
-                <h3>Thông tin liên hệ</h3>
+                <h4>Thông tin liên hệ</h4>
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
@@ -45,11 +32,24 @@
                     <label for="ward">Phường xã</label>
                     <input type="string" class="form-control" id="ward" value="{{this.address.ward}}" name="ward">
                 </div>
-
-                <button class="btn btn-secondary" id="cancel-btn" disabled><a class="text-decoration-none"
-                        id="cancel-link" style="color: white;">Hủy</a></button>
-                <button type="submit" class="btn btn-danger" id="save-btn" disabled>Lưu</button>
+                <div class="button-group">
+                    <button class="btn btn-secondary" id="cancel-btn" disabled><a class="text-decoration-none"
+                            id="cancel-link" style="color: white;">Hủy</a></button>
+                    <button type="submit" class="btn btn-danger ml-3" id="save-btn" disabled>Lưu</button>
+                </div>
             </div>
+            <div class="user-image col-3 ml-2 mt-2">
+                {{#if this.image}}
+                <img src="{{this.image}}" alt="avatar" class="user-image-avatar d-block m-auto">
+                {{else}}
+                <img src="\image\test.jpeg" alt="avatar" class="user-image-avatar d-block m-auto">
+                {{/if}}
+                <input type="file" class="form-control-file d-none" id="image-upload-btn" name="image">
+                <input type="button" id="image-upload-raiser" class="btn btn-danger d-block ml-auto mr-auto mt-4"
+                    value="Đổi ảnh đại diện">
+            </div>
+            <div class="col-3"></div>
+            <div class="col-3"></div>
         </div>
     </form>
 </div>
