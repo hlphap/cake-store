@@ -1,7 +1,15 @@
-.footer-brandname, .quick-links a, .footer-brandname:hover {
+.footer-custom {
+  border-top: 1px solid #333; }
+
+.footer-brandname,
+.quick-links a,
+.footer-brandname:hover {
   color: #000; }
 
-.footer-info, .contact, .quick-links, .newsletter {
+.footer-info,
+.contact,
+.quick-links,
+.newsletter {
   min-width: 20%;
   max-width: 20%; }
 
