@@ -21,7 +21,7 @@ const profile = catchAsync(async (req, res) => {
     // Select view to render
     res.render('user/profile', {
         styles: ['header', 'footer', 'profile'], // Required Stylesheet name from public
-        scripts: ['profile'], // Required Script name from public
+        scripts: ['profile', 'header'], // Required Script name from public
     });
 });
 

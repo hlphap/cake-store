@@ -1,13 +1,22 @@
-.user-information-form, .personal-information{
+.user-information-form{
     border-left: solid 2px #9f0311;
-}
-
-.user-image{
-    margin: 0 auto;
 }
 
 .user-image-avatar{
     width: 200px;
     height: 200px;
     border-radius: 50%;
+}
+
+.personal-information h4{
+    color: #9f0311;
+    font-weight: 650;
+}
+.personal-information label{
+    font-weight: 700;
+}
+
+.button-group{
+    display: flex;
+    justify-content: right;
 }

@@ -36,53 +36,64 @@
                     </ul>
                 </div>
             </div>
- {{#if user}}
-        <ul class='user-container-nav mr-5'>
-            <li>
-                <a href='#' style='margin-right:16px'><img src='/image/Favorite Cart.png' alt='' /></a>
-            </li>
-            <li class='user-container-nav-item'>
-                <img src="\image\UserAccount.png" alt="User Account">
-                <ul class="user-nav">
-                    <li class="user-container-infor m-auto">
-                        <div>
-                            <img src="\image\UserAccount.png" alt="User Account">
-                        </div>
-                        <div class="dmm">
-                            <h6>Minh</h6>
-                            <p>minh@gmail.com</p>
-                        </div>
-
-                    </li>
-                    <hr>
-                    <li>
-                        <a href="">Viết Blog</a>
-                        <a href="">Bài viết của tôi</a>
-                    </li>
-                    <hr>
-                    <li>
-                        <a href="">Lịch sử mua hàng</a>
-                    </li>
-                    <hr>
-                    <li>
-                        <a href="">Thông tin cá nhân</a>
-                        <a href="" style="color: red;">Đăng xuất</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        {{else}}
-        <div class='user-container'>
-            <div class="user-container-login">
-                <button id="loginBtn" class='btn' style='width:80px'>Login</button>
-                {{>user/signin}}
+            {{#if user}}
+            <ul class='user-container-nav mr-5'>
+                <li>
+                    <a href='#' style='margin-right:16px'><img src='/image/Favorite Cart.png' alt='' /></a>
+                </li>
+                <li class='user-container-nav-item'>
+                    <a href="">
+                        {{#if user.image}}
+                        <img src="{{this.image}}" alt="User Account">
+                        {{else}}
+                        <img src="\image\UserAccount.png" alt="User Account">
+                        {{/if}}
+                        <ul class="user-nav">
+                            <li class="m-auto">
+                                <div class="user-container-infor">
+                                    <div>
+                                        {{#if user.image}}
+                                        <img src="{{this.image}}" alt="User Account">
+                                        {{else}}
+                                        <img src="\image\UserAccount.png" alt="User Account">
+                                        {{/if}}
+                                    </div>
+                                    <div class="mini-user ml-3">
+                                        <h6>{{this.name}}</h6>
+                                        <p>{{this.email}}</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <hr>
+                            <li>
+                                <a href="">Viết blog</a>
+                                <a href="">Bài viết của tôi</a>
+                            </li>
+                            <hr>
+                            <li>
+                                <a href="">Lịch sử mua hàng</a>
+                            </li>
+                            <hr>
+                            <li>
+                                <a href="">Thông tin cá nhân</a>
+                                <a href="" style="color: #9f0311;">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+            {{else}}
+            <div class='user-container'>
+                <div class="user-container-login">
+                    <button id="loginBtn" class='btn' style='width:80px'>Login</button>
+                    {{>user/signin}}
+                </div>
+                <div class="user-container-signup">
+                    <button id="registryBtn" class='btn' style='width:80px'>Registry</button>
+                    {{>user/signup}}
+                </div>
             </div>
-            <div class="user-container-signup">
-                <button id="registryBtn" class='btn' style='width:80px'>Registry</button>
-                {{>user/signup}}
-            </div>
-        </div>
-        {{/if}}
+            {{/if}}
         </div>
     </div>
 </nav>
