@@ -160,48 +160,56 @@ const managerCake = catchAsync(async (req, res) => {
 const managerTypeCake = catchAsync(async (req, res) => {
     const data = [
         {
+            id:'TypeCake1',
             name:"Bánh ngọt",
             
         },
         {
+            id:'TypeCake1',
             name:"Bánh ngọt2",
             
         },
         {
+            id:'TypeCake1',
             name:"Bánh ngọt3",
             
         },
         {
+            id:'TypeCake1',
             name:"Bánh ngọt4",
            
         },
         {
+            id:'TypeCake1',
             name:"Bánh ngọt5",
            
         },
         {
+            id:'TypeCake1',
             name:"Bánh ngọt6",
            
         },
         {
+            id:'TypeCake1',
             name:"Bánh ngọt7",
         
         },
         {
+            id:'TypeCake1',
             name:"Bánh ngọt8",
            
         },
         {
-            name:"Bánh ngọt9",
-            
+            id:'TypeCake1',
+            name:"Bánh ngọt9",            
         },
         {
-            name:"Bánh kem",
-           
+            id:'TypeCake1',
+            name:"Bánh kem",           
         },
         {
-            name:"Bánh kem2",
-            
+            id:'TypeCake1',
+            name:"Bánh kem2",           
         },
     ]
     res.render('admin/managerTypeCake', {

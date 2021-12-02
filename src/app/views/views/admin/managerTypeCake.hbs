@@ -1,23 +1,25 @@
 <style>
-    .manaCake-headerTitle {
+    .manaTypeCake-headerTitle {
         font-weight: bold;
         font-size: large;
         margin-top: 1.2rem;
         margin-bottom: 7px;
     }
 
-    .manaCake-allDropdowStyle {
+    .manaTypeCake-allDropdowStyle {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        margin-left: 4px;
+        justify-content: space-between;
     }
 
-    .manaCake-dropComponentStyle {
+    .manaTypeCake-dropComponentStyle {
         flex-direction: column;
         margin: 0 3.5%;
     }
 
-    .manaCake-dropDownStyle {
+    .manaTypeCake-dropDownStyle {
         border-radius: 6px;
         border-color: black;
         border-width: 1px;
@@ -27,27 +29,28 @@
         border-radius: 6px;
     }
 
-    .manaCake-dropDownStyle:hover {
+    .manaTypeCake-dropDownStyle:hover {
         border-color: #9F0311;
     }
 
-    .manaCake-buttonSearch {
+    .manaTypeCake-buttonSearch {
         margin-top: 70%;
         width: 85px;
         border-radius: 6px;
         background-color: #9F0311;
         color: white;
+        
     }
 
-    .manaCake-buttonSearch:hover {
+    .manaTypeCake-buttonSearch:hover {
         box-shadow: 1px 1px 4px 1px grey;
         color: black;
     }
 
-    .manaCake-styleList {
+    .manaTypeCake-styleList {
         border-style: solid;
         border-width: 1px 1px;
-        width: 95%;
+        width: 92%;
         height: 65%;
         border-radius: 6px;
         margin-top: 24px;
@@ -56,7 +59,7 @@
         position: relative;
     }
 
-    .manaCake-addButton {
+    .manaTypeCake-addButton {
         position: absolute;
         justify-content: flex-end;
         right: 12px;
@@ -68,54 +71,54 @@
         color: white;
     }
 
-    .manaCake-addButton:hover {
+    .manaTypeCake-addButton:hover {
         box-shadow: 1px 1px 4px 1px grey;
         color: black;
     }
 
-    .manaCake-rowDataStyle {
+    .manaTypeCake-rowDataStyle {
         flex-direction: row;
         display: flex;
 
     }
 
-    .manaCake-rowDataStyle:hover {
+    .manaTypeCake-rowDataStyle:hover {
         border-width: 2px;
         border-color: red;
         border-style: solid;
     }
 
-    .manaCake-tableStyle {
+    .manaTypeCake-tableStyle {
 
         width: 92%;
         left: 12px;
 
     }
 
-    .manaCake-optionDropDown {
+    .manaTypeCake-optionDropDown {
         font-weight: 500;
     }
 
-    .manaCake-optionDropDown :hover {
+    .manaTypeCake-optionDropDown :hover {
         background-color: #9F0311;
         color: white;
     }
 
-    .manaCake-styleList tbody tr {}
+    .manaTypeCake-styleList tbody tr {}
 
-    .manaCake-styleList tbody td {
+    .manaTypeCake-styleList tbody td {
+        width: 25%;
+    }
+
+    .manaTypeCake-styleList thead th {
         width: 21%;
     }
 
-    .manaCake-styleList thead th {
-        width: 21%;
-    }
-
-    .manaCake-styleList thead {
+    .manaTypeCake-styleList thead {
         display: block;
     }
 
-    .manaCake-styleList tbody {
+    .manaTypeCake-styleList tbody {
         display: block;
         height: 26rem;
         overflow-x: hidden;
@@ -123,14 +126,14 @@
         font-weight: 500;
     }
 
-    .manaCake-dropbtn {}
+    .manaTypeCake-dropbtn {}
 
-    .manaCake-dropdown {
+    .manaTypeCake-dropdown {
         position: relative;
         display: inline-block;
     }
 
-    .manaCake-dropdown-content {
+    .manaTypeCake-dropdown-content {
         display: none;
         position: absolute;
         right: 0;
@@ -140,7 +143,7 @@
         z-index: 1;
     }
 
-    .manaCake-dropdown-content a {
+    .manaTypeCake-dropdown-content a {
         color: #9F0311;
         padding: 3px 12px;
         text-decoration: none;
@@ -149,96 +152,80 @@
 
     }
 
-    .manaCake-dropdown-content a:hover {
+    .manaTypeCake-dropdown-content a:hover {
         background-color: #9F0311;
         color: white;
         border-radius: 6px;
     }
 
-    .manaCake-dropdown:hover .manaCake-dropdown-content {
+    .manaTypeCake-dropdown:hover .manaTypeCake-dropdown-content {
         display: block;
         color: white;
         border-radius: 6px;
     }
 
-    .manaCake-dropdown:hover .manaCake-dropdowndropbtn {
+    .manaTypeCake-dropdown:hover .manaTypeCake-dropdowndropbtn {
         background-color: #9F0311;
         width: 18px;
         height: 18px;
         color: white;
     }
 
-    .manaCake-firstRowTable {
+    .manaTypeCake-firstRowTable {
         position: sticky;
         top: 0;
         background-color: white;
     }
 </style>
 <div>
-    <div class="manaCake-allDropdowStyle">
-        <div class="manaCake-dropcomponentStyle">
-            <p class="manaCake-headerTitle">Tên bánh</p>
-            <select name="nameCake" id="nameCake" class="manaCake-dropDownStyle">
+    <div class="manaTypeCake-allDropdowStyle">
+
+        <div class="manaTypeCake-dropcomponentStyle" >
+            <p class="manaTypeCake-headerTitle">Tên Loại bánh</p>
+            <select name="typeCake" id="typeCake" class="manaTypeCake-dropDownStyle">
                 <option value="" disabled selected>Select your option</option>
-                <option class="manaCake-optionDropDown" value="A-Z">A-Z</option>
-                <option class="manaCake-optionDropDown" value="Z-A">Z-A</option>
+                <option class="manaTypeCake-optionDropDown" value="banhman">Bánh ngọt</option>
+                <option class="manaTypeCake-optionDropDown" value="banhman">Bánh mặn</option>
+                <option class="manaTypeCake-optionDropDown" value="banhkem">Bánh kem</option>
+                <option class="manaTypeCake-optionDropDown" value="banhbonglan">Bánh bông lan</option>
             </select>
         </div>
-        <div class="manaCake-dropcomponentStyle">
-            <p class="manaCake-headerTitle">Loại bánh</p>
-            <select name="typeCake" id="typeCake" class="manaCake-dropDownStyle">
+        <div class="manaTypeCake-dropcomponentStyle" style="margin-Right: 520px;">
+            <p class="manaTypeCake-headerTitle">Ngày thêm vào</p>
+            <select name="dateAdd" id="dateAdd" class="manaTypeCake-dropDownStyle">
                 <option value="" disabled selected>Select your option</option>
-                <option class="manaCake-optionDropDown" value="banhman">Bánh ngọt</option>
-                <option class="manaCake-optionDropDown" value="banhman">Bánh mặn</option>
-                <option class="manaCake-optionDropDown" value="banhkem">Bánh kem</option>
-                <option class="manaCake-optionDropDown" value="banhbonglan">Bánh bông lan</option>
+                <option class="manaTypeCake-optionDropDown" value="moinhat">Mới nhất</option>
+                <option class="manaTypeCake-optionDropDown" value="cunhat">Cũ nhất</option>
             </select>
         </div>
-        <div class="manaCake-dropcomponentStyle">
-            <p class="manaCake-headerTitle">Giá</p>
-            <select name="price" id="price" class="manaCake-dropDownStyle">
-                <option value="" disabled selected>Select your option</option>
-                <option class="manaCake-optionDropDown" value="tangdan">Tăng dần</option>
-                <option class="manaCake-optionDropDown" value="giamdan">Giảm dần</option>
-            </select>
-        </div>
-        <div class="manaCake-dropcomponentStyle">
-            <p class="manaCake-headerTitle">Ngày thêm vào</p>
-            <select name="dateAdd" id="dateAdd" class="manaCake-dropDownStyle">
-                <option value="" disabled selected>Select your option</option>
-                <option class="manaCake-optionDropDown" value="moinhat">Mới nhất</option>
-                <option class="manaCake-optionDropDown" value="cunhat">Cũ nhất</option>
-            </select>
-        </div>
-        <div class="manaCake-dropcomponentStyle">
-            <button class="manaCake-buttonSearch">
+
+        <div class="manaTypeCake-dropcomponentStyle" style="margin-Right:60px">
+            <button class="manaTypeCake-buttonSearch">
                 Tìm kiếm
             </button>
         </div>
     </div>
-    <div class="manaCake-styleList">
-        <table class="table table-hover manaCake-tableStyle">
+    <div class="manaTypeCake-styleList">
+        <table class="table table-hover manaTypeCake-tableStyle">
             <tbody>
                 <div>
                     <tr>
-                        <th class="manaCake-firstRowTable" scope="col">STT</th>
-                        <th class="manaCake-firstRowTable" scope="col">Mã tin</th>
-                        <th class="manaCake-firstRowTable" scope="col">Tên bánh</th>
-                        <th class="manaCake-firstRowTable" scope="col">Giá</th>
-                        <th class="manaCake-firstRowTable" scope="col">Ngày thêm vào</th>
-                        <th class="manaCake-firstRowTable" scope="col"></th>
+                        <th class="manaTypeCake-firstRowTable" scope="col">STT</th>
+                        <th class="manaTypeCake-firstRowTable" scope="col">Mã tin</th>
+                        <th class="manaTypeCake-firstRowTable" scope="col">Tên bánh</th>
+                        <th class="manaTypeCake-firstRowTable" scope="col">Ngày thêm vào</th>
+                        <th class="manaTypeCake-firstRowTable" scope="col"></th>
                     </tr>
                 </div>
                 {{#each data}}
                 <tr>
                     <td>1</td>
+                    <td style="color: #9F0311;">{{this.id}}</td>
                     <td style="color: #9F0311;">{{this.name}}</td>
-                    <td style="color: #9F0311;">{{this.price}}</td>
-                    <td>{{this.typeCake.name}}</td>
                     <td>Ngày thêm vào</td>
-                    <td class="manaCake-dropdown">
-                        <img class="manaCake-dropbtn" src='/image/3dot.png' alt='' width="18" height="18" />
-                        <div class="manaCake-dropdown-content">
+                    <td class="manaTypeCake-dropdown">
+                        <img class="manaTypeCake-dropbtn" src='/image/3dot.png' alt='' width="18" height="18" />
+                        <div class="manaTypeCake-dropdown-content">
                             <a href="#">Chỉnh sửa</a>
                             <a href="#">Xóa</a>
                         </div>
@@ -248,7 +235,7 @@
             </tbody>
         </table>
 
-        <button class="manaCake-addButton">
+        <button class="manaTypeCake-addButton">
             Thêm bánh
         </button>
     </div>
