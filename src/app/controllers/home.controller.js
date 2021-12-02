@@ -4,6 +4,7 @@ const index = catchAsync(async (req, res) => {
     // Create fake data
     const data = {
         cake: [],
+        user: 'sdf',
     };
     // Select view to render
     return res.render('user/home', {

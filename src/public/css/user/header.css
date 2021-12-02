@@ -299,7 +299,8 @@
   text-transform: none;
   color: #000; }
 
-.user-nav li div p, .user-nav li div h6 {
+.user-nav li div p,
+.user-nav li div h6 {
   margin: 0;
   text-transform: none; }
 
@@ -325,5 +326,6 @@
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
   right: -30px; }
 
-.user-container-login, .user-container-signup {
+.user-container-login,
+.user-container-signup {
   position: relative; }
