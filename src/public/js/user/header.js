@@ -50,7 +50,7 @@ if (btnLogout) {
     btnLogout.onclick = (event) => {
         event.preventDefault();
         axios
-            .post('http://localhost:8080/auth/logout')
+            .post('/auth/logout')
             .then((response) => {
                 console.log('object');
                 location.reload();
