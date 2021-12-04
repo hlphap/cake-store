@@ -5,7 +5,7 @@ const btnRegister = document.getElementById('btnRegister');
 const formRegister = document.getElementById('formRegister');
 
 axios
-    .get('http://localhost:8080/address/provinces')
+    .get('/address/provinces')
     .then((response) => {
         response.data.forEach((province) => {
             const option = document.createElement('option');
@@ -22,7 +22,7 @@ selectProvinces.onchange = (event) => {
     const optionDistrict = document.querySelectorAll('#districts option');
     optionDistrict.forEach((option) => option.remove());
     axios
-        .get(`http://localhost:8080/address/provinces/${event.target.value}/districts`)
+        .get(`/address/provinces/${event.target.value}/districts`)
         .then((response) => {
             response.data.forEach((district) => {
                 const option = document.createElement('option');
@@ -40,7 +40,7 @@ selectDistricts.onchange = (event) => {
     const optionWards = document.querySelectorAll('#wards option');
     optionWards.forEach((option) => option.remove());
     axios
-        .get(`http://localhost:8080/address/districts/${event.target.value}/wards`)
+        .get(`/address/districts/${event.target.value}/wards`)
         .then((response) => {
             response.data.forEach((ward) => {
                 const option = document.createElement('option');
@@ -69,7 +69,7 @@ formRegister.addEventListener('submit', (event) => {
         },
     };
     axios
-        .post('http://localhost:8080/auth/register', user)
+        .post('/auth/register', user)
         .then((response) => {
             location.reload();
         })

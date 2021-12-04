@@ -9,7 +9,7 @@ if (formLogin) {
             password: event.target.password.value,
         };
         axios
-            .post('http://localhost:8080/auth/login', infoLogin)
+            .post('/auth/login', infoLogin)
             .then((response) => {
                 window.location = response.data.user.role === 'USER' ? '/' : '/admin/user/info';
             })
