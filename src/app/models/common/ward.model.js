@@ -8,11 +8,11 @@ const WardSchema = new Schema(
             type: String,
             require: true,
         },
-        district_Id: {
+        district: {
             type: mongoose.Schema.Types.ObjectId,
             ref: 'districts',
         },
-        province_Id: {
+        province: {
             type: mongoose.Schema.Types.ObjectId,
             ref: 'provinces',
         },

@@ -25,7 +25,10 @@ const profile = catchAsync(async (req, res) => {
     });
 });
 
-const updateUser = catchAsync(async (req, res) => res.json(req.body));
+const updateUser = catchAsync(async (req, res) => {
+    const user = await userService.updateUser(req.params.userID, req.body);
+    res.status(httpStatus.OK).send(user);
+});
 
 module.exports = {
     getUsers,

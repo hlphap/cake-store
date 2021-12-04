@@ -1,8 +1,7 @@
 const selectProvinces = document.getElementById('provinces');
 const selectDistricts = document.getElementById('districts');
 const selectWards = document.getElementById('wards');
-const btnRegister = document.getElementById('btnRegister');
-const formRegister = document.getElementById('formRegister');
+const formChangeInfo = document.getElementById('form-change-info');
 
 axios
     .get('http://localhost:8080/address/provinces')
@@ -54,12 +53,10 @@ selectDistricts.onchange = (event) => {
         });
 };
 
-formRegister.addEventListener('submit', (event) => {
+formChangeInfo.addEventListener('submit', (event) => {
     event.preventDefault();
     const user = {
         email: event.target.email.value,
-        password: event.target.password.value,
-        rePassword: event.target.rePassword.value,
         fullName: event.target.fullName.value,
         birthday: event.target.birthday.value,
         address: {
@@ -69,9 +66,9 @@ formRegister.addEventListener('submit', (event) => {
         },
     };
     axios
-        .post('http://localhost:8080/auth/register', user)
+        .put(`http://localhost:8080/users/${window.getCookie('userID')}`, user)
         .then((response) => {
-            location.reload();
+            console.log(response.data);
         })
         .catch((error) => console.error(error));
 });

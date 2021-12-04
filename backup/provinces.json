@@ -1,0 +1,23 @@
+[
+    {
+        "_id": {
+            "$oid": "60b7a50331c6ba3de5e7a351"
+        },
+        "name": "Tỉnh Đồng Nai",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50331c6ba3de5e7a350"
+        },
+        "name": "Tỉnh Bình Dương",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50331c6ba3de5e7a353"
+        },
+        "name": "Thành phố Hồ Chí Minh",
+        "__v": 0
+    }
+]

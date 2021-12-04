@@ -2,6 +2,7 @@ const compression = require('compression');
 const express = require('express');
 const mongoSanitize = require('express-mongo-sanitize');
 const morgan = require('morgan');
+const cookieParser = require('cookie-parser');
 
 const env = require('../configs/env');
 const { errorConverter, errorHandler } = require('../middlewares/error');
@@ -18,6 +19,9 @@ module.exports = () => {
 
     // parse urlencoded request body
     app.use(express.urlencoded({ extended: true }));
+
+    //cookie middleware
+    app.use(cookieParser());
 
     // sanitize request data
     app.use(mongoSanitize());

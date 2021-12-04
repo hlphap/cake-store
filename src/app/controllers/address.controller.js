@@ -14,6 +14,7 @@ const getDistrictsByProvince = catchAsync(async (req, res) => {
 });
 
 const getWardsByDistrict = catchAsync(async (req, res) => {
+    console.log(req.params.districtID);
     const wards = await addressService.getWardsByDistrict(req.params.districtID);
     return res.status(httpStatus.OK).send(wards);
 });
