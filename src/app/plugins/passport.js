@@ -1,5 +1,4 @@
 const passport = require('passport');
-
 // passport Jwt
 const JwtStrategy = require('passport-jwt').Strategy;
 const { ExtractJwt } = require('passport-jwt');
@@ -27,9 +26,14 @@ const jwtStrategy = new JwtStrategy(
         try {
             const { id: userID } = jwtPayload;
 
-            const user = await User.findById(userID);
+            const user = await User.findById(userID).populate({
+                path: 'address',
+                populate: ['province', 'district', 'ward'],
+            });
 
             if (!user) done(null, false);
+
+            user.birthday = user.birthday.slice(0, 10);
 
             return done(null, user);
         } catch (error) {
@@ -61,78 +65,8 @@ const localStrategy = new LocalStrategy(
     },
 );
 
-// Passport google
-const googleStrategy = new GooglePlusTokenStrategy(
-    {
-        clientID: env.passport.google.clientID,
-        clientSecret: env.passport.google.clientSecret,
-    },
-    async (accessToken, refreshToken, profile, done) => {
-        try {
-            // check whether this current user exists in our database
-            const user = await User.findOne({
-                authGoogleID: profile.id,
-                authType: 'google',
-            });
-
-            if (user) return done(null, user);
-
-            // If new account
-            const newUser = new User({
-                authType: 'google',
-                authGoogleID: profile.id,
-                firstName: profile.name.givenName,
-                lastName: profile.name.familyName,
-                email: profile.emails[0].value,
-            });
-
-            await newUser.save();
-
-            return done(null, newUser);
-        } catch (error) {
-            return done(error, false);
-        }
-    },
-);
-
-// Passport facebook
-const facebookStrategy = new FacebookTokenStrategy(
-    {
-        clientID: env.passport.facebook.clientID,
-        clientSecret: env.passport.facebook.clientSecret,
-    },
-    async (accessToken, refreshToken, profile, done) => {
-        try {
-            // check whether this current user exists in our database
-            const user = await User.findOne({
-                authFacebookID: profile.id,
-                authType: 'facebook',
-            });
-
-            if (user) return done(null, user);
-
-            // If new account
-            const newUser = new User({
-                authType: 'facebook',
-                authFacebookID: profile.id,
-                firstName: profile.name.givenName,
-                lastName: profile.name.familyName,
-                email: profile.emails[0].value,
-            });
-
-            await newUser.save();
-
-            return done(null, newUser);
-        } catch (error) {
-            return done(error, false);
-        }
-    },
-);
-
 module.exports = {
     jwtStrategy,
     localStrategy,
-    googleStrategy,
-    facebookStrategy,
     passport,
 };

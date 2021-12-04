@@ -4,15 +4,15 @@ const { Schema } = mongoose;
 
 const AddressSchema = new Schema(
     {
-        province_Id: {
+        province: {
             type: mongoose.Schema.Types.ObjectId,
             ref: 'provinces',
         },
-        district_Id: {
+        district: {
             type: mongoose.Schema.Types.ObjectId,
             ref: 'districts',
         },
-        ward_Id: {
+        ward: {
             type: mongoose.Schema.Types.ObjectId,
             ref: 'wards',
         },

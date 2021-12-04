@@ -1,0 +1,422 @@
+[
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5dc"
+        },
+        "name": "Thành phố Biên Hòa",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a351"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5dd"
+        },
+        "name": "Thành phố Long Khánh",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a351"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5de"
+        },
+        "name": "Huyện Tân Phú",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a351"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5df"
+        },
+        "name": "Huyện Vĩnh Cửu",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a351"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5e0"
+        },
+        "name": "Huyện Định Quán",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a351"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5e1"
+        },
+        "name": "Huyện Trảng Bom",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a351"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5e2"
+        },
+        "name": "Huyện Thống Nhất",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a351"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5e3"
+        },
+        "name": "Huyện Cẩm Mỹ",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a351"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5e4"
+        },
+        "name": "Huyện Long Thành",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a351"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5e5"
+        },
+        "name": "Huyện Xuân Lộc",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a351"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5e6"
+        },
+        "name": "Huyện Nhơn Trạch",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a351"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5d3"
+        },
+        "name": "Thành phố Thủ Dầu Một",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a350"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5d4"
+        },
+        "name": "Huyện Bàu Bàng",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a350"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5d5"
+        },
+        "name": "Huyện Dầu Tiếng",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a350"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5d6"
+        },
+        "name": "Thị xã Bến Cát",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a350"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5d7"
+        },
+        "name": "Huyện Phú Giáo",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a350"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5d8"
+        },
+        "name": "Thị xã Tân Uyên",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a350"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5d9"
+        },
+        "name": "Thành phố Dĩ An",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a350"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5da"
+        },
+        "name": "Thành phố Thuận An",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a350"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5db"
+        },
+        "name": "Huyện Bắc Tân Uyên",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a350"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5ef"
+        },
+        "name": "Quận 1",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a353"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5f0"
+        },
+        "name": "Quận 12",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a353"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5f1"
+        },
+        "name": "Quận Gò Vấp",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a353"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5f2"
+        },
+        "name": "Quận Bình Thạnh",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a353"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5f3"
+        },
+        "name": "Quận Tân Bình",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a353"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5f4"
+        },
+        "name": "Quận Tân Phú",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a353"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5f5"
+        },
+        "name": "Quận Phú Nhuận",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a353"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5f6"
+        },
+        "name": "Thành phố Thủ Đức",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a353"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5f7"
+        },
+        "name": "Quận 3",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a353"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5f8"
+        },
+        "name": "Quận 10",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a353"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5f9"
+        },
+        "name": "Quận 11",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a353"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5fa"
+        },
+        "name": "Quận 4",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a353"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5fb"
+        },
+        "name": "Quận 5",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a353"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5fc"
+        },
+        "name": "Quận 6",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a353"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5fd"
+        },
+        "name": "Quận 8",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a353"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5fe"
+        },
+        "name": "Quận Bình Tân",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a353"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a5ff"
+        },
+        "name": "Quận 7",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a353"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a600"
+        },
+        "name": "Huyện Củ Chi",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a353"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a601"
+        },
+        "name": "Huyện Hóc Môn",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a353"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a602"
+        },
+        "name": "Huyện Bình Chánh",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a353"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a603"
+        },
+        "name": "Huyện Nhà Bè",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a353"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60b7a50631c6ba3de5e7a604"
+        },
+        "name": "Huyện Cần Giờ",
+        "province": {
+            "$oid": "60b7a50331c6ba3de5e7a353"
+        },
+        "__v": 0
+    }
+]
