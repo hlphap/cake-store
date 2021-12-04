@@ -4,7 +4,7 @@ const selectWards = document.getElementById('wards');
 const formChangeInfo = document.getElementById('form-change-info');
 
 axios
-    .get('http://localhost:8080/address/provinces')
+    .get('/address/provinces')
     .then((response) => {
         response.data.forEach((province) => {
             const option = document.createElement('option');
@@ -21,7 +21,7 @@ selectProvinces.onchange = (event) => {
     const optionDistrict = document.querySelectorAll('#districts option');
     optionDistrict.forEach((option) => option.remove());
     axios
-        .get(`http://localhost:8080/address/provinces/${event.target.value}/districts`)
+        .get(`/address/provinces/${event.target.value}/districts`)
         .then((response) => {
             response.data.forEach((district) => {
                 const option = document.createElement('option');
@@ -39,7 +39,7 @@ selectDistricts.onchange = (event) => {
     const optionWards = document.querySelectorAll('#wards option');
     optionWards.forEach((option) => option.remove());
     axios
-        .get(`http://localhost:8080/address/districts/${event.target.value}/wards`)
+        .get(`/address/districts/${event.target.value}/wards`)
         .then((response) => {
             response.data.forEach((ward) => {
                 const option = document.createElement('option');
@@ -66,7 +66,7 @@ formChangeInfo.addEventListener('submit', (event) => {
         },
     };
     axios
-        .put(`http://localhost:8080/users/${window.getCookie('userID')}`, user)
+        .put(`/users/${window.getCookie('userID')}`, user)
         .then((response) => {
             console.log(response.data);
         })
