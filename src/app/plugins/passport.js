@@ -25,7 +25,6 @@ const jwtStrategy = new JwtStrategy(
     async (jwtPayload, done) => {
         try {
             const { id: userID } = jwtPayload;
-
             const user = await User.findById(userID).populate({
                 path: 'address',
                 populate: ['province', 'district', 'ward'],
