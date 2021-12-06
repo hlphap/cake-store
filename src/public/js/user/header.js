@@ -1,44 +1,59 @@
-const loginBtn = document.getElementById('loginBtn');
-const signupBtn = document.getElementById('registryBtn');
-const loginForm = document.getElementById('login-form');
-let mouseInside;
-const closeBtn = document.getElementById('close-btn');
-const signupForm = document.getElementById('signup-form');
+document.addEventListener('DOMContentLoaded', function() {
+    let loginBtn = document.getElementById('loginBtn');
+    let signupBtn = document.getElementById('registryBtn');
+    let loginForm = document.getElementById('login-form');
+    let mouseInside;
+    let signupForm = document.getElementById('signup-form');
+    let userContainer = document.querySelector('.user-container-nav-item');
+    let userNav = document.querySelector('.user-nav')
 
-loginBtn.onclick = function () {
-    loginForm.style.display = 'flex';
-    loginForm.style.right = '725px';
-};
+    loginBtn.onclick = function () {
+        loginForm.style.display = 'flex';
+    };
 
-loginForm.onmouseover = function () {
-    mouseInside = true;
-};
+    loginForm.onmouseover = function () {
+        mouseInside = true;
+    };
 
-loginForm.onmouseout = function () {
-    mouseInside = false;
-};
+    loginForm.onmouseout = function () {
+        mouseInside = false;
+    };
 
-document.querySelector('body').onmouseup = function () {
-    if (!mouseInside) {
-        loginForm.style.display = 'none';
-        signupForm.style.display = 'none';
+    signupBtn.onclick = function () {
+        signupForm.style.display = 'flex';
+    };
+
+    signupForm.onmouseover = function () {
+        mouseInside = true;
+    };
+
+    signupForm.onmouseout = function () {
+        mouseInside = false;
+    };
+
+    userNav.onmouseover = function () {
+        mouseInside = true;
+    };
+
+    userNav.onmouseout = function () {
+        mouseInside = false;
+    };
+
+
+    document.querySelector('body').onmouseup = function () {
+        if (!mouseInside) {
+            loginForm.style.display = 'none';
+            signupForm.style.display = 'none';
+            userNav.style.display = 'none';
+        }
+    };
+
+    userContainer.onclick = function () {
+        userNav.style.display = 'block';
     }
-};
 
-signupBtn.onclick = function () {
-    signupForm.style.display = 'flex';
-    signupForm.style.right = '815px';
-};
-
-signupForm.onmouseover = function () {
-    mouseInside = true;
-};
-
-signupForm.onmouseout = function () {
-    mouseInside = false;
-};
-
-closeBtn.onclick = function () {
-    loginForm.style.display = 'none';
-    signupForm.style.display = 'none';
-};
+    function closeForm() { 
+        document.getElementById("signup-form").style.display = "none"; 
+        document.getElementById("login-form").style.display = "none";
+    }
+})

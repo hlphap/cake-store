@@ -25,6 +25,18 @@ const profile = catchAsync(async (req, res) => {
     });
 });
 
+const product = catchAsync(async (req, res) => {
+    // Select view to render
+    res.render('user/product', {
+        styles: ['header', 'footer', 'product'], // Required Stylesheet name from public
+        scripts: ['product', 'header'], // Required Script name from public
+    });
+});
+
+const addToCart = catchAsync(async (req, res) => {
+    res.json(req.body)
+});
+
 const updateUser = catchAsync(async (req, res) => res.json(req.body));
 
 module.exports = {
@@ -33,4 +45,6 @@ module.exports = {
     updateUser,
     deleteUser,
     profile,
+    product,
+    addToCart,
 };

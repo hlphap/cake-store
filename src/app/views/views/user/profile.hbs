@@ -5,32 +5,32 @@
                 <h4>Thông tin cá nhân</h4>
                 <div class="form-group">
                     <label for="fullName">Họ tên</label>
-                    <input type="text" class="form-control" id="fullName" value="{{this.fullName}}" name="fullName">
+                    <input type="text" class="form-control" id="fullName" value="{{user.fullName}}" name="fullName">
                 </div>
                 <div class="form-group">
                     <label for="birthday">Ngày sinh</label>
-                    <input type="date" class="form-control" id="birthday" value="{{this.birthday}}" name="birthday">
+                    <input type="date" class="form-control" id="birthday" value="{{user.birthday}}" name="birthday">
                 </div>
 
                 <h4>Thông tin liên hệ</h4>
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                        value="{{this.email}}" disabled>
+                        value="{{user.email}}" disabled>
                 </div>
                 <div class="form-group">
                     <label for="province">Tỉnh thành</label>
-                    <input type="string" class="form-control" id="province" value="{{this.address.province}}"
+                    <input type="string" class="form-control" id="province" value="{{user.address.province}}"
                         name="province">
                 </div>
                 <div class="form-group">
                     <label for="district">Quận huyện</label>
-                    <input type="string" class="form-control" id="district" value="{{this.address.district}}"
+                    <input type="string" class="form-control" id="district" value="{{user.address.district}}"
                         name=district>
                 </div>
                 <div class="form-group">
                     <label for="ward">Phường xã</label>
-                    <input type="string" class="form-control" id="ward" value="{{this.address.ward}}" name="ward">
+                    <input type="string" class="form-control" id="ward" value="{{user.address.ward}}" name="ward">
                 </div>
                 <div class="button-group">
                     <button class="btn btn-secondary" id="cancel-btn" disabled><a class="text-decoration-none"
@@ -39,8 +39,8 @@
                 </div>
             </div>
             <div class="user-image col-3 ml-2 mt-2">
-                {{#if this.image}}
-                <img src="{{this.image}}" alt="avatar" class="user-image-avatar d-block m-auto">
+                {{#if user.image}}
+                <img src="{{user.image}}" alt="avatar" class="user-image-avatar d-block m-auto">
                 {{else}}
                 <img src="\image\test.jpeg" alt="avatar" class="user-image-avatar d-block m-auto">
                 {{/if}}

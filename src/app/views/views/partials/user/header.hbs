@@ -1,5 +1,5 @@
 <nav class='navbar navbar-expand-lg navbar-default container-fluid navbar-custom'>
-    <div class='content-wrap'>
+    <div class='content-wrap container-fluid'>
         <div class='container-fluid d-flex justify-content-between'>
             <div class='navbar-brand ml-2'>
                 <a class='' href='/'>Cake Food</a>
@@ -36,7 +36,7 @@
                     </ul>
                 </div>
             </div>
- {{#if data.user}}
+        {{#if user}}
         <ul class='user-container-nav mr-5'>
             <li>
                 <a href='#' style='margin-right:16px'><img src='/image/Favorite Cart.png' alt='' /></a>
@@ -44,11 +44,11 @@
             <li class='user-container-nav-item'>
                 <img class = 'user-image'src="\image\UserAccount.png" alt="User Account">
                 <ul class="user-nav">
-                    <li class="user-container-infor m-auto">
+                    <li class="user-container-infor">
                         <div>
                             <img class = 'user-image' src="\image\UserAccount.png" alt="User Account">
                         </div>
-                        <div class="dmm">
+                        <div class="ml-3">
                             <h6>Minh</h6>
                             <p>minh@gmail.com</p>
                         </div>
@@ -64,23 +64,27 @@
                     </li>
                     <hr>
                     <li>
-                        <a href="">Thông tin cá nhân</a>
+                        <a href="/users/profile">Thông tin cá nhân</a>
                         <a href="" style="color: red;">Đăng xuất</a>
                     </li>
                 </ul>
             </li>
         </ul>
+        <p style="display: none;" id="loginBtn"></p>
+        <p style="display: none;" id="registryBtn"></p>
         {{else}}
         <div class='user-container'>
             <div class="user-container-login">
                 <button id="loginBtn" class='btn' style='width:80px'>Login</button>
-                {{>user/signin}}
             </div>
             <div class="user-container-signup">
                 <button id="registryBtn" class='btn' style='width:80px'>Registry</button>
-                {{>user/signup}}
             </div>
-            {{/if}}
         </div>
+        <div class="user-container-nav-item" style="display: none"></div>
+        <div class="user-nav" style="display: none"></div>
+        {{/if}}
     </div>
 </nav>
+{{>user/signin}}
+{{>user/signup}}
