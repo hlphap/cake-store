@@ -3,11 +3,12 @@ const catchAsync = require('../../utils/catch-async');
 const index = catchAsync(async (req, res) => {
     const { user } = req;
     const data = {
+        cake: [],
         user,
     };
-    return res.render('user/menu', {
-        title: 'Menu', //  Required Title
-        styles: ['layout-user', 'header', 'footer', 'menu'], // Required Stylesheet name from public
+    res.render('user/blog', {
+        title: 'Blog', //  Required Title
+        styles: ['layout-user', 'header', 'footer', 'blog'], // Required Stylesheet name from public
         scripts: [], // Required Script name from public
         data,
     });

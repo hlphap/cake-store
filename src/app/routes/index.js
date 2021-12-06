@@ -8,6 +8,7 @@ const authRoute = require('./auth.route');
 const aboutUsRoute = require('./about-us.route');
 const contactRoute = require('./contact.route');
 const addressRoute = require('./address.route');
+const blogRoute = require('./blog.route');
 
 const router = express.Router();
 
@@ -19,6 +20,8 @@ router.use('/about-us', aboutUsRoute);
 router.use('/contact', contactRoute);
 router.use('/address', addressRoute);
 router.use('/auth', authRoute);
+router.use('/blog', blogRoute);
+
 // Admin
 router.use('/admin', adminRoute);
 
