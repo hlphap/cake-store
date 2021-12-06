@@ -68,7 +68,19 @@ formChangeInfo.addEventListener('submit', (event) => {
     axios
         .put(`/users/${window.getCookie('userID')}`, user)
         .then((response) => {
-            console.log(response.data);
+            $('#alert').html(`<div class="alert alert-success fade show" id='test123' role="alert">
+                                    Thay đổi thông tin thành công
+                            </div>`);
+            setTimeout(() => {
+                $('#test123').alert('close');
+            }, 4000);
         })
-        .catch((error) => console.error(error));
+        .catch((error) => {
+            $('#alert').html(`<div class="alert alert-danger fade show" id='test123' role="alert">
+                                    ${error.response.data.message}
+                            </div>`);
+            setTimeout(() => {
+                $('#test123').alert('close');
+            }, 4000);
+        });
 });

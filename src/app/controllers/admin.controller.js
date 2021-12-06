@@ -25,6 +25,7 @@ const changePassword = catchAsync(async (req, res) => {
     res.render('admin/change-password', {
         layout: 'admin',
         styles: ['sidebar', 'layout-admin', 'breadcrumb', 'change-password'],
+        scripts: ['change-password'],
         breadcrumbsItem: [
             {
                 title: 'Quản lý người dùng',
