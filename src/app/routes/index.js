@@ -9,6 +9,7 @@ const aboutUsRoute = require('./about-us.route');
 const contactRoute = require('./contact.route');
 const addressRoute = require('./address.route');
 const blogRoute = require('./blog.route');
+const cakeRoute = require('./cake.route');
 
 const router = express.Router();
 
@@ -24,5 +25,8 @@ router.use('/blog', blogRoute);
 
 // Admin
 router.use('/admin', adminRoute);
+
+// API
+router.use('/api/cakes', cakeRoute);
 
 module.exports = router;

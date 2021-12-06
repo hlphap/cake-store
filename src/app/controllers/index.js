@@ -9,3 +9,6 @@ module.exports.blogController = require('./blog.controller');
 
 // Admin
 module.exports.adminController = require('./admin.controller');
+
+// Api
+module.exports.cakeController = require('./cake.controller');
