@@ -12,3 +12,4 @@ module.exports.adminController = require('./admin.controller');
 
 // Api
 module.exports.cakeController = require('./cake.controller');
+module.exports.typeCakeController = require('./type-cake.controller');

@@ -12,25 +12,19 @@ const createCake = catchAsync(async (req, res) => {
     res.status(httpStatus.CREATED).send({ cake });
 });
 
-// const deleteUser = catchAsync(async (req, res) => {
-//     const deletedUser = await userService.deleteUser(req.params.userID);
-//     res.status(httpStatus.OK).send({ deletedUser });
-// });
+const deleteCake = catchAsync(async (req, res) => {
+    const deletedCake = await cakeService.deleteCake(req.params.cakeID);
+    res.status(httpStatus.OK).send({ deletedCake });
+});
 
-// const profile = catchAsync(async (req, res) => {
-//     // Select view to render
-//     res.render('user/profile', {
-//         styles: ['header', 'footer', 'profile'], // Required Stylesheet name from public
-//         scripts: ['profile', 'header'], // Required Script name from public
-//     });
-// });
-
-// const updateUser = catchAsync(async (req, res) => {
-//     const user = await userService.updateUser(req.params.userID, req.body);
-//     res.status(httpStatus.OK).send(user);
-// });
+const updateCake = catchAsync(async (req, res) => {
+    const updatedCake = await cakeService.updateCake(req.params.cakeID, req.body);
+    res.status(httpStatus.OK).send(updatedCake);
+});
 
 module.exports = {
     getCakes,
     createCake,
+    updateCake,
+    deleteCake,
 };

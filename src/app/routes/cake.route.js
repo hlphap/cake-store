@@ -6,5 +6,7 @@ const router = express.Router();
 
 router.get('/', cakeController.getCakes);
 router.post('/', cakeController.createCake);
+router.put('/:cakeID', cakeController.updateCake);
+router.delete('/:cakeID', cakeController.deleteCake);
 
 module.exports = router;
