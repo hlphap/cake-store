@@ -1,24 +1,7 @@
-// html{
-//         box-sizing: border-box;
-//         @font-face {
-//         font-family: 'Gotham Pro';
-//         src: url('GothamPro-Medium.eot');
-//         src: local('Gotham Pro Medium'), local('GothamPro-Medium'),
-//             url('GothamPro-Medium.woff') format('woff'),
-//         font-weight: 500;
-//         font-style: normal;
-//         }
-//     }
-
 #signup-form {
-    position: fixed;
-    width: 100%;
-    display: none;
-}
-#signup-form .container {
     background-color: #fff;
     margin: 0 auto;
-    width: 390px;
+    width: 420px;
     z-index: 2;
     padding: 20px;
     border-radius: 20px;
@@ -27,14 +10,8 @@
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
 }
 
-#signup-form .close-btn {
-    position: relative;
-    left: 340px;
-    cursor: pointer;
-}
-
 #signup-form .container .form {
-    width: 350px;
+    width: 100%;
     font-weight: 600;
 }
 

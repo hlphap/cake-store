@@ -1,24 +1,23 @@
-.product-container{
+.product-container {
     border-radius: 5px;
     max-width: 900px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.product-image{
+.product-image {
     width: 400px;
     border-radius: 5px;
 }
 
-.product-descriptions{
+.product-descriptions {
     margin-top: 5%;
     max-width: 900px;
     transform: translateX(-1.8%);
 }
 
-
-.product-descriptions-section{
+.product-descriptions-section {
     display: flex;
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
     height: 40px;
     text-indent: 5%;
     align-items: center;
@@ -32,12 +31,12 @@
     font-weight: 600;
 }
 
-.product-descriptions-main{
+.product-descriptions-main {
     margin-top: 3%;
     text-indent: 3%;
 }
 
-.add-to-cart{
+.add-to-cart {
     color: #fff;
     font-weight: 600;
     border-radius: 25px;
@@ -47,29 +46,29 @@
     text-align: center;
 }
 
-input[type="number"] {
+input[type='number'] {
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
     appearance: textfield;
-  }
-  
-  input[type=number]::-webkit-inner-spin-button,
-  input[type=number]::-webkit-outer-spin-button {
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
     -webkit-appearance: none;
-  }
-  
-  .number-input {
+}
+
+.number-input {
     border: 2px solid #ddd;
     display: inline-flex;
-  }
-  
-  .number-input,
-  .number-input * {
+}
+
+.number-input,
+.number-input * {
     box-sizing: border-box;
-  }
-  
-  .number-input span {
-    outline:none;
+}
+
+.number-input span {
+    outline: none;
     -webkit-appearance: none;
     background-color: transparent;
     border: none;
@@ -80,10 +79,10 @@ input[type="number"] {
     cursor: pointer;
     margin: 0;
     position: relative;
-  }
-  
-  .number-input span:before,
-  .number-input span:after {
+}
+
+.number-input span:before,
+.number-input span:after {
     display: inline-block;
     position: absolute;
     content: '';
@@ -91,19 +90,19 @@ input[type="number"] {
     height: 2px;
     background-color: #212121;
     transform: translate(100%, 1100%);
-  }
-  .number-input span.plus:after {
+}
+.number-input span.plus:after {
     transform: translate(100%, 1100%) rotate(90deg);
-  }
-  
-  .number-input input[type=number] {
+}
+
+.number-input input[type='number'] {
     font-family: sans-serif;
     max-width: 5rem;
-    padding: .5rem;
+    padding: 0.5rem;
     border: solid #ddd;
     border-width: 0 2px;
     font-size: 2rem;
     height: 3rem;
     font-weight: bold;
     text-align: center;
-  }
+}

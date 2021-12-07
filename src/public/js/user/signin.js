@@ -1,6 +1,6 @@
 const formLogin = document.getElementById('formLogin');
 
-//Login
+// Login
 if (formLogin) {
     formLogin.addEventListener('submit', (event) => {
         event.preventDefault();

@@ -13,19 +13,19 @@
                 <div class='collapse navbar-collapse' id='navbar-toggle-content'>
                     <ul class='navbar-nav me-auto mb-2 mb-lg-0'>
                         <li class='nav-item'>
-                            <a class='nav-link' aria-current='page' href='/'>Home</a>
+                            <a class='nav-link' aria-current='page' href='/'>Trang chủ</a>
                         </li>
                         <li class='nav-item'>
-                            <a class='nav-link' href='/menu'>Menu</a>
+                            <a class='nav-link' href='/menu'>Đặt hàng</a>
                         </li>
                         <li class='nav-item'>
-                            <a class='nav-link' href='/about-us'>About Us</a>
+                            <a class='nav-link' href='/about-us'>Về chúng tôi</a>
                         </li>
                         <li class='nav-item'>
-                            <a class='nav-link' href='/blog'>Blog</a>
+                            <a class='nav-link' href='/blog'>Tin tức</a>
                         </li>
                         <li class='nav-item'>
-                            <a class='nav-link' href='/contact'>Contact</a>
+                            <a class='nav-link' href='/contact'>Liên hệ</a>
                         </li>
                     </ul>
                 </div>
@@ -69,10 +69,12 @@
             {{else}}
             <div class='user-container'>
                 <div class="user-container-login">
-                    <button id="loginBtn" class='btn' style='width:80px'>Login</button>
+                    <button id="loginBtn" class='btn' data-toggle="modal" data-target="#modal-login"
+                        style='width: fit-content;'>Đăng nhập</button>
                 </div>
                 <div class="user-container-signup">
-                    <button id="registryBtn" class='btn' style='width:80px'>Registry</button>
+                    <button id="registryBtn" class='btn' data-toggle="modal" data-target="#modal-register"
+                        style='width: fit-content;'>Đăng ký</button>
                 </div>
             </div>
             <div class="user-container-nav-item" style="display: none"></div>
