@@ -1,47 +1,64 @@
-<div class='info-div-wrap'>
-    <div class='info-wrap-content'>
-        <div class='info-label-input'>
-            <label for='' class=''>Email</label>
-            <input type='email' name='email' class='' placeholder='example@example.com' />
+<form id='form-change-info'>
+    <div class='info-div-wrap'>
+        <div class='info-wrap-content'>
+            <div class='info-label-input'>
+                <label for='' class=''>Email</label>
+                <input
+                    type='email'
+                    name='email'
+                    class=''
+                    placeholder='example@example.com'
+                    value='{{data.user.email}}'
+                />
+            </div>
+            <div class='info-label-input'>
+                <label for='' class=''>Họ và tên</label>
+                <input
+                    type='text'
+                    name='fullName'
+                    class=''
+                    placeholder='Nhập họ và tên'
+                    value='{{data.user.fullName}}'
+                />
+            </div>
+            <div class='info-label-input'>
+                <label for='' class=''>Ngày sinh</label>
+                <input
+                    type='date'
+                    name='birthday'
+                    class=''
+                    placeholder='Chọn ngày sinh'
+                    value='{{data.user.birthday}}'
+                />
+            </div>
+            <div class='info-label-input'>
+                <label for='province'>Tỉnh thành</label>
+                <select name='province' id='provinces'>
+                    <option
+                        value='{{data.user.address.province._id}}'
+                        selected
+                    >{{data.user.address.province.name}}</option>
+                </select>
+            </div>
+            <div class='info-label-input'>
+                <label for='district'>Quận huyện</label>
+                <select name='district' id='districts'>
+                    <option
+                        value='{{data.user.address.district._id}}'
+                        selected
+                    >{{data.user.address.district.name}}</option>
+                </select>
+            </div>
+            <div class='info-label-input'>
+                <label for='ward'>Phường xã</label>
+                <select name='ward' id='wards'>
+                    <option value='{{data.user.address.ward._id}}' selected>{{data.user.address.ward.name}}</option>
+                </select>
+            </div>
         </div>
-        <div class='info-label-input'>
-            <label for='' class=''>Họ và tên</label>
-            <input type='text' name='name' class='' placeholder='Nhập họ và tên' />
-        </div>
-        <div class='info-label-input'>
-            <label for='' class=''>Ngày sinh</label>
-            <input type='date' name='name' class='' placeholder='Chọn ngày sinh' />
-        </div>
-        <div class='info-label-input'>
-            <label for='province'>Tỉnh thành</label>
-            <select name='' id=''>
-                <option value=''>123123</option>
-                <option value=''>123123</option>
-                <option value=''>123123</option>
-                <option value=''>123123</option>
-            </select>
-        </div>
-        <div class='info-label-input'>
-            <label for='province'>Quận huyện</label>
-            <select name='' id=''>
-                <option value=''>123123</option>
-                <option value=''>123123</option>
-                <option value=''>123123</option>
-                <option value=''>123123</option>
-            </select>
-        </div>
-        <div class='info-label-input'>
-            <label for='province'>Phường xã</label>
-            <select name='' id=''>
-                <option value=''>123123</option>
-                <option value=''>123123</option>
-                <option value=''>123123</option>
-                <option value=''>123123</option>
-            </select>
+        <div class='info-change-info'>
+            <button type='submit' class='info-btn-cancel' id='info-btn-cancel'>Hủy</button>
+            <button type='submit' class='info-btn-save' id='info-btn-save'>Lưu</button>
         </div>
     </div>
-    <div class='info-change-info'>
-        <button type='button' class='info-btn-cancel'>Hủy</button>
-        <button type='button' class='info-btn-save'>Lưu</button>
-    </div>
-</div>
+</form>

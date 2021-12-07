@@ -11,6 +11,15 @@ const CakeSchema = mongoose.Schema(
             type: Number,
             required: true,
         },
+        expiration: {
+            type: String,
+        },
+        image: {
+            type: String,
+        },
+        discount: {
+            type: Number,
+        },
         typeCake: {
             type: TypeCakeSchema,
             required: true,

@@ -1,11 +1,12 @@
-document.addEventListener('DOMContentLoaded', function() {
-    let loginBtn = document.getElementById('loginBtn');
-    let signupBtn = document.getElementById('registryBtn');
-    let loginForm = document.getElementById('login-form');
+document.addEventListener('DOMContentLoaded', () => {
+    const loginBtn = document.getElementById('loginBtn');
+    const signupBtn = document.getElementById('registryBtn');
+    const loginForm = document.getElementById('login-form');
     let mouseInside;
-    let signupForm = document.getElementById('signup-form');
-    let userContainer = document.querySelector('.user-container-nav-item');
-    let userNav = document.querySelector('.user-nav')
+    const signupForm = document.getElementById('signup-form');
+    const userContainer = document.querySelector('.user-container-nav-item');
+    const userNav = document.querySelector('.user-nav');
+    const btnLogout = document.getElementById('btnLogout');
 
     loginBtn.onclick = function () {
         loginForm.style.display = 'flex';
@@ -39,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
         mouseInside = false;
     };
 
-
     document.querySelector('body').onmouseup = function () {
         if (!mouseInside) {
             loginForm.style.display = 'none';
@@ -50,10 +50,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
     userContainer.onclick = function () {
         userNav.style.display = 'block';
+    };
+
+    function closeForm() {
+        document.getElementById('signup-form').style.display = 'none';
+        document.getElementById('login-form').style.display = 'none';
     }
 
-    function closeForm() { 
-        document.getElementById("signup-form").style.display = "none"; 
-        document.getElementById("login-form").style.display = "none";
+    // kkkalsdakls
+    if (btnLogout) {
+        btnLogout.onclick = (event) => {
+            event.preventDefault();
+            axios
+                .post('/auth/logout')
+                .then((response) => {
+                    console.log('object');
+                    location.reload();
+                })
+                .catch((error) => {
+                    console.error(error);
+                });
+        };
     }
-})
+});
