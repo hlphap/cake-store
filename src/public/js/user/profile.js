@@ -5,6 +5,11 @@ const cancelBtn = document.getElementById('cancel-btn');
 const cancelLink = document.getElementById('cancel-link');
 const saveBtn = document.getElementById('save-btn');
 const userInfoForm = document.querySelector('.user-information-form');
+const userInfoGroup = document.querySelector('#user-informations-group');
+const userChangeGroup = document.querySelector('#user-change-password-group');
+const userInfoBox = document.querySelector('.user-informations');
+const userChangePassBox = document.querySelector('.user-change-password')
+
 
 imageUploadRaiser.onclick = () => {
     imageUploadBtn.click();
@@ -19,3 +24,17 @@ userInfoForm.onchange = () => {
     cancelLink.setAttribute('href', '/profile');
     saveBtn.removeAttribute('disabled');
 };
+
+userChangeGroup.onclick = () => {
+    userInfoBox.style.display = "none"
+    userChangePassBox.style.display = "block"
+    userInfoGroup.removeAttribute("style")
+    userChangeGroup.setAttribute("style", "font-weight: 600; color: #9f0311;")
+}
+
+userInfoGroup.onclick = () => {
+    userChangePassBox.style.display = "none"
+    userInfoBox.style.display = "block"
+    userChangeGroup.removeAttribute("style")
+    userInfoGroup.setAttribute("style", "font-weight: 600; color: #9f0311;")
+}

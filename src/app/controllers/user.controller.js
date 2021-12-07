@@ -20,7 +20,7 @@ const deleteUser = catchAsync(async (req, res) => {
 const profile = catchAsync(async (req, res) => {
     // Select view to render
     res.render('user/profile', {
-        styles: ['header', 'footer', 'profile'], // Required Stylesheet name from public
+        styles: ['header', 'footer', 'profile', 'layout-user'], // Required Stylesheet name from public
         scripts: ['profile', 'header'], // Required Script name from public
     });
 });
