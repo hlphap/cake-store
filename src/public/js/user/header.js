@@ -2,7 +2,6 @@ const loginBtn = document.getElementById('loginBtn');
 const signupBtn = document.getElementById('registryBtn');
 const loginForm = document.getElementById('login-form');
 let mouseInside;
-const closeBtn = document.getElementById('close-btn');
 const signupForm = document.getElementById('signup-form');
 const btnLogout = document.getElementById('btnLogout');
 
