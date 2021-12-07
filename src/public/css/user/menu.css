@@ -22,7 +22,8 @@
   height: 100%;
   border: none;
   color: black;
-  padding-left: 20px; }
+  padding-left: 20px;
+  outline: none; }
 
 .shop_option_search select {
   border: none;
@@ -31,7 +32,8 @@
   width: 35%;
   height: 44px;
   line-height: 44px;
-  padding-left: 30px; }
+  padding-left: 30px;
+  outline: none; }
 
 .shop_option_search span {
   color: #e1e1e1;
