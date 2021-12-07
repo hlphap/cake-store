@@ -19,11 +19,11 @@
     transform: translateX(47px);
 }
 
-.user-container-nav{
+.user-container-nav {
     margin: auto 0;
 }
 
-.user-container-nav > li{
+.user-container-nav > li {
     display: inline-block;
     list-style-type: none;
 }
@@ -32,19 +32,19 @@
     color: #fff;
 }
 
-.user-container > div{
+.user-container > div {
     display: inline-block;
 }
 
-.user-image{
+.user-image {
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
 
-.user-nav{
+.user-nav {
     display: none;
-    width: 200px;
+    width: 250px;
     list-style-type: none;
     background-color: #fff;
     margin: 0;
@@ -52,72 +52,52 @@
     z-index: 10;
 }
 
-.user-nav li{
+.user-nav li {
     margin: 10px;
-
 }
 
-.user-nav li a{
+.user-container-nav-item a,
+.user-nav li a {
     display: block;
     text-decoration: none;
     text-transform: none;
+    color: #000;
 }
 
-.user-nav li div p, .user-nav li div h6{
+.user-nav li div p,
+.user-nav li div h6 {
     margin: 0;
     text-transform: none;
 }
 
-.user-nav li div p{
+.user-nav li div p {
     font-size: 12px;
 }
 
-.user-container-infor div{
-    display: inline-block;
+.mini-user {
+    display: block;
+    margin-left: 10px;
+    overflow: hidden;
 }
 
-.user-container-nav-item{
+.user-container-infor {
+    display: flex;
+    margin-top: 10px;
+}
+
+.user-container-nav-item {
     position: relative;
 }
 
-.user-container-nav-item:hover .user-nav{
+.user-container-nav-item:hover .user-nav {
     display: block;
     position: absolute;
-    border-radius: 5px ;
+    border-radius: 5px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
     right: -30px;
 }
 
-.user-container-login, .user-container-signup{
+.user-container-login,
+.user-container-signup {
     position: relative;
-}
-
-.user-container-login:hover #login-form{
-    display: flex;
-    right: 250px;
-    top: -3px;
-}
-
-#login-form::before{
-    position: absolute;
-    content: '';
-    height: 20px;
-    left: 35px;
-    top: 34px;
-    width: 390px;
-    display: block;
-}
-
-#signup-form::before{
-    position: absolute;
-    content: '';
-    height: 20px;
-    left: 35px;
-    width: 390px;
-    display: block;
-}
-
-.user-container-signup:hover #signup-form{
-    display: flex;
-    right: 350px;
 }

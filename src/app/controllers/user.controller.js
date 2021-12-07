@@ -21,11 +21,14 @@ const profile = catchAsync(async (req, res) => {
     // Select view to render
     res.render('user/profile', {
         styles: ['header', 'footer', 'profile'], // Required Stylesheet name from public
-        scripts: ['profile'], // Required Script name from public
+        scripts: ['profile', 'header'], // Required Script name from public
     });
 });
 
-const updateUser = catchAsync(async (req, res) => res.json(req.body));
+const updateUser = catchAsync(async (req, res) => {
+    const user = await userService.updateUser(req.params.userID, req.body);
+    res.status(httpStatus.OK).send(user);
+});
 
 module.exports = {
     getUsers,

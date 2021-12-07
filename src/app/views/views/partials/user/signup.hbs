@@ -1,41 +1,40 @@
-<div id="signup-form">
+<div id='signup-form'>
     <div class='container' id='popupForm'>
-        <div class='close-btn' onclick='closeForm()'> x </div>
         <div class='form'>
             <h2>ĐĂNG KÍ</h2>
-            <form method='post' action='/auth/signup'>
+            <form id='formRegister'>
                 <h3>Thông tin tài khoản</h3>
                 <div class='input-form'>
-                    <input type='text' name='email' placeholder='Tên đăng nhập/Email' required/>
+                    <input type='text' name='email' placeholder='Tên đăng nhập/Email' required />
                 </div>
                 <div class='input-form'>
                     <input type='password' name='password' placeholder='Mật khẩu' required />
                 </div>
                 <div class='input-form'>
-                    <input type='password' name='repassword' placeholder=' Nhập lại Mật khẩu' required />
+                    <input type='password' name='rePassword' placeholder=' Nhập lại Mật khẩu' required />
                 </div>
                 <h3>Thông tin cá nhân</h3>
                 <div class='input-form'>
-                    <input type='text' placeholder='Tên đầy đủ' name='fullname'/>
+                    <input type='text' placeholder='Tên đầy đủ' name='fullName' />
                 </div>
                 <div class='input-form'>
                     <input type='date' placeholder='Ngày sinh' name='birthday' />
                 </div>
                 <div class='input-form'>
-                    <select name='provinces' required>
+                    <select id='provinces' name='province' required>
                         <option value=''>Tỉnh/Thành </option>
                     </select>
-                    <select name='district' required>
+                    <select id='districts' name='district' required>
                         <option value=''>Quận/Huyện</option>
                     </select>
-                    <select name='ward' required>
+                    <select id='wards' name='ward' required>
                         <option value=''>Phường/Xã</option>
                     </select>
                     <input class='billing_address_1' name='' type='hidden' value='' />
                     <input class='billing_address_2' name='' type='hidden' value='' />
                 </div>
                 <div class='input-form'>
-                    <input type='submit' value='Đăng kí' />
+                    <input id='btnRegister' type='submit' value='Đăng kí' />
                 </div>
             </form>
             <div class='signout'>

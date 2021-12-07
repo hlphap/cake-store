@@ -1,19 +1,13 @@
-// const { Province, District, Ward } = require('../models');
+const { Province, District, Ward } = require('../models');
 
-// const getProvinces = async () => {
-//     return Province.find({});
-// };
+const getProvinces = async () => Province.find({});
 
-// const getDistrictsByProvince = async (provinceID) => {
-//     return District.find({ province_Id: provinceID });
-// };
+const getDistrictsByProvince = async (provinceID) => District.find({ province: provinceID });
 
-// const getWardsByDistrict = async (districtID) => {
-//     return Ward.find({ district_Id: districtID });
-// };
+const getWardsByDistrict = async (districtID) => Ward.find({ district: districtID });
 
-// module.exports = {
-//     getProvinces,
-//     getDistrictsByProvince,
-//     getWardsByDistrict,
-// };
+module.exports = {
+    getProvinces,
+    getDistrictsByProvince,
+    getWardsByDistrict,
+};

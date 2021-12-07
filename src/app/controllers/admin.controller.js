@@ -1,6 +1,10 @@
 const catchAsync = require('../../utils/catch-async');
-
+const { mongooseToObject } = require('../../utils/switchObject');
 const index = catchAsync(async (req, res) => {
+    const { user } = req;
+    const data = {
+        user,
+    };
     res.render('admin/admin', {
         layout: 'admin',
         styles: ['sidebar', 'layout-admin', 'breadcrumb'],
@@ -14,12 +18,14 @@ const index = catchAsync(async (req, res) => {
                 href: '#',
             },
         ],
+        data,
     });
 });
 const changePassword = catchAsync(async (req, res) => {
     res.render('admin/change-password', {
         layout: 'admin',
         styles: ['sidebar', 'layout-admin', 'breadcrumb', 'change-password'],
+        scripts: ['change-password'],
         breadcrumbsItem: [
             {
                 title: 'Quản lý người dùng',
@@ -34,6 +40,11 @@ const changePassword = catchAsync(async (req, res) => {
 });
 
 const info = catchAsync(async (req, res) => {
+    const { user } = req;
+    const data = {
+        user: mongooseToObject(user),
+    };
+    console.log(data.user.birthday);
     res.render('admin/info', {
         layout: 'admin',
         styles: ['sidebar', 'layout-admin', 'breadcrumb', 'info'],
@@ -47,6 +58,8 @@ const info = catchAsync(async (req, res) => {
                 href: '#',
             },
         ],
+        scripts: ['info'],
+        data,
     });
 });
 const managerCake = catchAsync(async (req, res) => {

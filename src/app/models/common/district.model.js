@@ -8,7 +8,7 @@ const DistrictSchema = new Schema(
             type: String,
             require: true,
         },
-        province_Id: {
+        province: {
             type: mongoose.Schema.Types.ObjectId,
             ref: 'provinces',
         },

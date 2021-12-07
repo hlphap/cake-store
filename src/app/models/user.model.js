@@ -24,17 +24,14 @@ const UserSchema = mongoose.Schema(
             required: true,
         },
         birthday: {
-            type: Date,
+            type: String,
         },
         image: {
             type: String,
+            default: 'image/UserAccount.png',
         },
         address: {
             type: AddressSchema,
-        },
-        type: {
-            type: Boolean,
-            required: true,
         },
         role: {
             type: String,
