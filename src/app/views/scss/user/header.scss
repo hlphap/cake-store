@@ -85,19 +85,19 @@
     margin-top: 10px;
 }
 
-.user-container-nav-item {
+.user-container-nav-item{
     position: relative;
 }
 
-.user-container-nav-item:hover .user-nav {
-    display: block;
+.user-nav {
     position: absolute;
     border-radius: 5px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-    right: -30px;
+    top: 115%;
+    left: -400%;
 }
 
-.user-container-login,
-.user-container-signup {
-    position: relative;
+
+.user-container-nav-item:hover{
+    cursor: pointer;
 }

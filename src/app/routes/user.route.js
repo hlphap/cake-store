@@ -8,6 +8,8 @@ const validate = require('../../middlewares/validate');
 const router = express.Router();
 
 router.get('/profile', userController.profile);
+router.get('/product', userController.product);
+router.post('/add-cart', userController.addToCart);
 router.get('/', passport.authenticate('jwt', { session: false }), checkRole('ADMIN'), userController.getUsers);
 router.post(
     '/',
