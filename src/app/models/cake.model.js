@@ -11,9 +11,6 @@ const CakeSchema = mongoose.Schema(
             type: Number,
             required: true,
         },
-        expiration: {
-            type: String,
-        },
         image: {
             type: String,
         },
