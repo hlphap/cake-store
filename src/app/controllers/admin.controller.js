@@ -1,5 +1,6 @@
 const catchAsync = require('../../utils/catch-async');
-const { mongooseToObject } = require('../../utils/switchObject');
+const { mongooseToObject,multipleMongooseToObject } = require('../../utils/switchObject');
+const { cakeService } = require('../services');
 const index = catchAsync(async (req, res) => {
     const { user } = req;
     const data = {
@@ -63,100 +64,15 @@ const info = catchAsync(async (req, res) => {
     });
 });
 const managerCake = catchAsync(async (req, res) => {
-    const data = [
-        {
-            name:"cake1",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
-            },
-            description:"123123"
-        },
-        {
-            name:"cake2",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
-            },
-            description:"123123"
-        },
-        {
-            name:"cake3",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
-            },
-            description:"123123"
-        },
-        {
-            name:"cake4",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
-            },
-            description:"123123"
-        },
-        {
-            name:"cake4",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
-            },
-            description:"123123"
-        },
-        {
-            name:"cake4",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
-            },
-            description:"123123"
-        },
-        {
-            name:"cake4",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
-            },
-            description:"123123"
-        },
-        {
-            name:"cake4",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
-            },
-            description:"123123"
-        },
-        {
-            name:"cake4",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
-            },
-            description:"123123"
-        },
-        {
-            name:"cake4",
-            price:123000324234,
-            typeCake:{
-                name:"banh ngot"
-            },
-            description:"123123"
-        },
-        {
-            name:"cake4",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
-            },
-            description:"123123"
-        },
-    ]
+    const cakes= await cakeService.getCakes()
+    const data={
+        cakes:multipleMongooseToObject(cakes),
+    }
     res.render('admin/managerCake', {
         data,
         layout: 'admin',
         styles: ['sidebar', 'layout-admin', 'breadcrumb'],
+        scripts: ['managerCake'],
         breadcrumbsItem: [
             {
                 title: 'Quản lý dịch vụ',

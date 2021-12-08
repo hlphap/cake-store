@@ -39,7 +39,7 @@
         border-radius: 6px;
         background-color: #9F0311;
         color: white;
-        
+
     }
 
     .manaTypeCake-buttonSearch:hover {
@@ -176,11 +176,159 @@
         top: 0;
         background-color: white;
     }
+
+    .change-password-div-wrap {
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .change-password-change-info {
+        align-self: flex-end;
+    }
+
+    .change-password-wrap-content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .change-password-label-input>label {
+        font-size: 16px;
+        margin: auto 0;
+        display: inline-block;
+        width: 180px;
+        margin-right: 20px;
+        font-weight: normal;
+    }
+
+    .change-password-label-input {
+        padding-bottom: 20px;
+    }
+
+    .change-password-label-input>input,
+    .change-password-label-input>select {
+        height: 40px;
+        width: 360px;
+        border-radius: 10px;
+        border: 1px solid #595260;
+        font-weight: 500px;
+        opacity: 0.5;
+        line-height: 16px;
+        padding: 0 10px;
+    }
+
+    .change-password-label-input>input,
+    .change-password-label-input>select {
+        outline-color: #9f0311;
+    }
+
+    .change-password-label-input>input:hover,
+    .change-password-label-input>select:hover {
+        border-color: #9f0311;
+    }
+
+    //Button
+    .change-password-btn-cancel {
+        border-radius: 10px;
+        width: fit-content;
+        min-width: 92px;
+        height: 42px;
+        background-color: #e9eaea;
+        border: none;
+        color: #9f0311;
+        margin-right: 5px;
+    }
+
+    .change-password-btn-save {
+        border-radius: 10px;
+        width: fit-content;
+        min-width: 92px;
+        height: 42px;
+        background-color: #9f0311;
+        border: none;
+        color: #ffffff;
+    }
+
+    .change-password-custom-btn-success {
+        border-radius: 10px;
+        width: fit-content;
+        min-width: 92px;
+        height: 42px;
+        background-color: #28a745;
+        border: none;
+        color: #ffffff;
+    }
 </style>
 <div>
-    <div class="manaTypeCake-allDropdowStyle">
+    <!-- Modal Thêm loại bánh -->
+    <div class="modal fade" id="addTypeCakeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addCakeModalTitle">Thêm loại bánh</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id='form-add-typecake'>
+                        {{! Form add typecake }}
+                        <div class='change-password-div-wrap'>
+                            <div class='change-password-wrap-content'>
+                                <div class='change-password-label-input'>
+                                    <label for='' class=''>Tên loại bánh</label>
+                                    <input type='text' name='nameTypeCake' class='' placeholder='Nhập tên loại bánh' />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type='button' class='btn btn-outline-danger change-password-btn-cancel'
+                        data-dismiss='modal'>Hủy</button>
+                    <button type='button' class='btn btn-success change-password-custom-btn-success'
+                        id='btn-change-password'>Lưu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Chỉnh sửa loại bánh -->
+    <div class="modal fade" id="editTypeCakeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editCakeModalTitle">Chỉnh sửa bánh</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id='form-edit-typecake'>
+                        {{! Form edit typecake }}
+                        <div class='change-password-div-wrap'>
+                            <div class='change-password-wrap-content'>
+                                <div class='change-password-label-input'>
+                                    <label for='' class=''>Tên loại bánh</label>
+                                    <input type='text' name='nameTypeCake' class='' placeholder='Nhập tên loại bánh' />
+                                </div>
+                            </div>
 
-        <div class="manaTypeCake-dropcomponentStyle" >
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type='button' class='btn btn-outline-danger change-password-btn-cancel'
+                        data-dismiss='modal'>Hủy</button>
+                    <button type='button' class='btn btn-success change-password-custom-btn-success'
+                        id='btn-change-password'>Lưu thay đổi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="manaTypeCake-allDropdowStyle">
+        <div class="manaTypeCake-dropcomponentStyle">
             <p class="manaTypeCake-headerTitle">Tên Loại bánh</p>
             <select name="typeCake" id="typeCake" class="manaTypeCake-dropDownStyle">
                 <option value="" disabled selected>Select your option</option>
@@ -200,9 +348,7 @@
         </div>
 
         <div class="manaTypeCake-dropcomponentStyle" style="margin-Right:60px">
-            <button class="manaTypeCake-buttonSearch">
-                Tìm kiếm
-            </button>
+             <button type='button' class='change-password-btn-save' style="margin-top: 50%;">Tìm kiếm</button>
         </div>
     </div>
     <div class="manaTypeCake-styleList">
@@ -226,7 +372,7 @@
                     <td class="manaTypeCake-dropdown">
                         <img class="manaTypeCake-dropbtn" src='/image/3dot.png' alt='' width="18" height="18" />
                         <div class="manaTypeCake-dropdown-content">
-                            <a href="#">Chỉnh sửa</a>
+                            <a href="#" data-toggle="modal" data-target="#editTypeCakeModal">Chỉnh sửa</a>
                             <a href="#">Xóa</a>
                         </div>
                     </td>
@@ -235,9 +381,11 @@
             </tbody>
         </table>
 
-        <button class="manaTypeCake-addButton">
-            Thêm bánh
-        </button>
+       <button type='button' class='change-password-btn-save' 
+        style="position: absolute;
+        justify-content: flex-end;
+        right: 12px;
+        bottom: 12px;" data-toggle="modal" data-target="#addTypeCakeModal">Thêm loại bánh</button>
     </div>
 
 </div>
