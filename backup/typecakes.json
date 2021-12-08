@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "61ae3fdfc640c0becb4fe86d"
+  },
+  "name": "Bánh sinh nhật",
+  "image": "/image/type-cake/type-birthday.jpg",
+  "createdAt": {
+    "$date": "2021-12-06T16:52:47.404Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T16:52:47.404Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ae3fe3c640c0becb4fe86f"
+  },
+  "name": "Bánh quy",
+  "image": "/image/type-cake/type-banh-quy.jpg",
+  "createdAt": {
+    "$date": "2021-12-06T16:52:51.379Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T16:52:51.379Z"
+  }
+},{
+  "_id": {
+    "$oid": "61b051e83ad22e2f872d7b54"
+  },
+  "name": "Bánh bông lan",
+  "image": "/image/type-cake/type-banh-bong-lan.jpg",
+  "createdAt": {
+    "$date": "2021-12-06T16:52:51.379Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T16:52:51.379Z"
+  }
+},{
+  "_id": {
+    "$oid": "61b051fd3ad22e2f872d7b55"
+  },
+  "name": "Bánh donut",
+  "image": "/image/type-cake/type-banh-donut.jpg",
+  "createdAt": {
+    "$date": "2021-12-06T16:52:51.379Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T16:52:51.379Z"
+  }
+}]

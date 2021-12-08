@@ -6,6 +6,8 @@ const getCakes = async () => Cake.find({});
 
 const getCakeById = async (CakeId) => Cake.findById(CakeId);
 
+const getCakesByTypeCake = async (typeCakeID) => Cake.find({ 'typeCake._id': typeCakeID });
+
 const createCake = async (CakeBody) => Cake.create(CakeBody);
 
 const updateCake = async (CakeId, CakeBody) => {
@@ -30,4 +32,5 @@ module.exports = {
     createCake,
     updateCake,
     deleteCake,
+    getCakesByTypeCake,
 };

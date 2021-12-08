@@ -7,6 +7,11 @@ const getCakes = catchAsync(async (req, res) => {
     res.status(httpStatus.OK).send({ cakes });
 });
 
+const getCakeById = catchAsync(async (req, res) => {
+    const cake = await cakeService.getCakeById(req.params.cakeID);
+    res.status(httpStatus.OK).send({ cake });
+});
+
 const createCake = catchAsync(async (req, res) => {
     const cake = await cakeService.createCake(req.body);
     res.status(httpStatus.CREATED).send({ cake });
@@ -24,6 +29,7 @@ const updateCake = catchAsync(async (req, res) => {
 
 module.exports = {
     getCakes,
+    getCakeById,
     createCake,
     updateCake,
     deleteCake,
