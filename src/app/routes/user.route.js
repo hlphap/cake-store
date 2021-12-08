@@ -8,7 +8,7 @@ const checkUserLogged = require('../../middlewares/check-user-logged');
 
 const router = express.Router();
 
-router.get('/profile', userController.profile);
+router.get('/profile/:id', userController.profile);
 router.post('/add-cart', userController.addToCart);
 router.get('/checkout', checkUserLogged, userController.checkout);
 router.get('/', passport.authenticate('jwt', { session: false }), checkRole('ADMIN'), userController.getUsers);

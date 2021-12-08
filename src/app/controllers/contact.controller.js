@@ -4,7 +4,7 @@ const index = catchAsync(async (req, res) => {
     const { user } = req;
     const data = {
         cake: [],
-        user,
+        user: mongooseToObject(user),
     };
     res.render('user/contact', {
         title: 'About', //  Required Title

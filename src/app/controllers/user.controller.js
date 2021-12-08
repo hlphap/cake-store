@@ -1,6 +1,7 @@
 const httpStatus = require('http-status');
 const catchAsync = require('../../utils/catch-async');
 const userService = require('../services/user.service');
+const { User } = require('../models');
 
 const getUsers = catchAsync(async (req, res) => {
     const users = await userService.getUsers();
@@ -19,7 +20,9 @@ const deleteUser = catchAsync(async (req, res) => {
 
 const profile = catchAsync(async (req, res) => {
     // Select view to render
+    let userData = req.user
     res.render('user/profile', {
+        user: userData,
         styles: ['header', 'footer', 'profile', 'layout-user'], // Required Stylesheet name from public
         scripts: ['profile', 'header'], // Required Script name from public
     });
