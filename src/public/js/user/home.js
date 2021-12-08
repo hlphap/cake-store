@@ -27,9 +27,20 @@ for (let i = 0; i < btnAddCakeToCart.length; i++) {
                 }
 
                 localStorage.setItem('cart', JSON.stringify(carts));
+                $('#alert').html(`<div class="alert alert-success fade show" id='alertLog' role="alert">
+                                    Thêm bánh thành công
+                            </div>`);
+                setTimeout(() => {
+                    $('#alertLog').alert('close');
+                }, 4000);
             })
             .catch((error) => {
-                console.log(error);
+                $('#alert').html(`<div class="alert alert-danger fade show" id='alertLog' role="alert">
+                                    ${error.response.data.message}
+                            </div>`);
+                setTimeout(() => {
+                    $('#alertLog').alert('close');
+                }, 4000);
             });
     };
 }

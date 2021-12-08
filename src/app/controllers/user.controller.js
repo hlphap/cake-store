@@ -26,9 +26,14 @@ const profile = catchAsync(async (req, res) => {
 });
 
 const checkout = catchAsync(async (req, res) => {
+    const user = req.user;
+    const data = {
+        user,
+    };
     res.render('user/checkout', {
         styles: ['header', 'footer', 'checkout', 'layout-user'], // Required Stylesheet name from public
-        scripts: ['profile', 'header'], // Required Script name from public
+        scripts: ['profile', 'header', 'checkout'], // Required Script name from public
+        data,
     });
 });
 

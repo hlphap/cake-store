@@ -25,18 +25,21 @@
                                 </svg>
                             </span>
                         </div>
-                        <textarea type="text" class="form-control"
+                        <textarea id='product-note' type="text" class="form-control"
                             placeholder="Bạn có muốn ghi chú gì cho sản phẩm này không ?" name="note"></textarea>
                     </div>
 
                     <div class="number-input">
                         <span onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></span>
-                        <input class="quantity" min="1" name="quantity" value="1" type="number">
+                        <input id='product-quantity' class="quantity" min="1" name="quantity" value="1" type="number">
                         <span onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
                             class="plus"></span>
                     </div>
                     <div>
-                        <button type="submit" class=" mt-4 btn add-to-cart">Thêm vào giỏ hàng</button>
+                        <button type='button' id='button-add-to-cart' value='{{data.cake._id}}'
+                            class=" mt-4 btn add-to-cart">Thêm vào
+                            giỏ
+                            hàng</button>
                     </div>
                 </form>
             </div>
