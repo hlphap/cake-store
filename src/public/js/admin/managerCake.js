@@ -2,6 +2,38 @@ const selectAddTypeCake = document.getElementById('addTypeCake');
 const selectEditTypeCake = document.getElementById('editTypeCake');
 const selectTypeCakeDrop = document.getElementById('typeCakeDrop');
 const formChangeInfo = document.getElementById('form-change-info');
+const btnAddNewCake = document.getElementById('btn-add-new-cake');
+const formAddNewCake = document.getElementById('form-add-cake');
+
+
+formAddNewCake.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const formData = new FormData(formAddNewCake);
+
+    console.log(formData.get('addTypeCake'));
+    axios.post('/api/cakes', { 
+        name: formData.get('name'),
+        price: formData.get('price'),
+        image: formData.get('image'), // chua
+        discount: formData.get('discount'),
+        description: formData.get('description'),
+        typeCake: {
+            _id: formData.get('addTypeCake'),
+            name: document.getElementById('addTypeCake').options[document.getElementById('addTypeCake').selectedIndex].text,
+            image: "/image/type-cake/type-banh-bong-lan.jpg",
+            createdAt: "2021-12-06T16:52:51.379Z",
+            updatedAt: "2021-12-06T16:52:51.379Z"
+        },
+    })
+    .then(() => { window.location.reload()});
+});
+
+btnAddNewCake.onclick = () =>{   
+    document.getElementById('btn-submit-add').click();
+}
+
+
+
 
 axios
     .get('/api/type-cakes')
@@ -92,3 +124,4 @@ formChangeInfo.addEventListener('submit', (event) => {
             }, 4000);
         });
 });
+

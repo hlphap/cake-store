@@ -296,15 +296,15 @@
                             <div class='change-password-wrap-content'>
                                 <div class='change-password-label-input'>
                                     <label for='' class=''>Tên bánh</label>
-                                    <input type='text' name='nameCake' class='' placeholder='Nhập tên bánh' />
+                                    <input type='text' name='name' class='' placeholder='Nhập tên bánh' />
                                 </div>
                                 <div class='change-password-label-input'>
                                     <label for='' class=''>Giá bánh</label>
-                                    <input type='text' name='priceCake' class='' placeholder='Nhập giá bánh' />
+                                    <input type='text' name='price' class='' placeholder='Nhập giá bánh' />
                                 </div>
                                 <div class='change-password-label-input'>
                                     <label for='' class=''>Giảm giá</label>
-                                    <input type='text' name='discountCake' class='' placeholder='Nhập giá khuyến mãi' />
+                                    <input type='text' name='discount' class='' placeholder='Nhập giá khuyến mãi' />
                                 </div>
                                 <div class='info-label-input' style="flex-direction: column;display:flex">
                                     <label for='' class=''>Loại bánh</label>
@@ -314,10 +314,14 @@
                                 </div>
                                 <div class='change-password-label-input'>
                                     <label for='' class=''>Mô tả bánh</label>
-                                    <input type='text' name='descriptionCake' class='' placeholder='Nhập mô tả bánh' />
+                                    <input type='text' name='description' class='' placeholder='Nhập mô tả bánh' />
+                                </div>
+                                 <div class="form-group">
+                                    <label for="ImageTypeCake">Hình bánh</label>
+                                    <input type="file" class="form-control-file" id="imageTypeCake" name="image">
                                 </div>
                             </div>
-
+                            <button type='submit' style='display: none' id='btn-submit-add'></button>
                         </div>
                     </form>
                 </div>
@@ -325,7 +329,7 @@
                     <button type='button' class='btn btn-outline-danger change-password-btn-cancel'
                         data-dismiss='modal'>Hủy</button>
                     <button type='button' class='btn btn-success change-password-custom-btn-success'
-                        id='btn-change-password'>Lưu</button>
+                        id='btn-add-new-cake'>Lưu</button>
                 </div>
             </div>
         </div>
@@ -454,7 +458,7 @@
         <button type='button' class='change-password-btn-save' style="position: absolute;
         justify-content: flex-end;
         right: 12px;
-        bottom: 12px;" data-toggle="modal" data-target="#addCakeModal">Thêm bánh</button>
+        bottom: 12px;" data-toggle="modal" data-target="#addCakeModal" id='btn-add-cake'>Thêm bánh</button>
     </div>
 
 </div>
