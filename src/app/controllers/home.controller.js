@@ -16,7 +16,7 @@ const index = catchAsync(async (req, res) => {
     return res.render('user/home', {
         title: 'Home', //  Required Title
         styles: ['layout-user', 'header', 'footer', 'home'], // Required Stylesheet name from public
-        scripts: [], // Required Script name from public
+        scripts: ['home'], // Required Script name from public
         data, // Data to handlebars
     });
 });

@@ -1,0 +1,361 @@
+[{
+  "_id": {
+    "$oid": "61b0543d0bbe47b4873cadd2"
+  },
+  "name": "Bánh butter",
+  "price": 120000,
+  "image": "/image/cake/banh-butter.jpg",
+  "discount": 20,
+  "typeCake": {
+    "name": "Bánh bông lan",
+    "image": "/image/type-cake/type-banh-bong-lan.jpg",
+    "_id": {
+      "$oid": "61b051e83ad22e2f872d7b54"
+    },
+    "updatedAt": {
+      "$date": "2021-12-06T16:52:51.379Z"
+    },
+    "createdAt": {
+      "$date": "2021-12-06T16:52:51.379Z"
+    }
+  },
+  "description": "Pound cake với thành phần chính gồm bột, bơ, trứng, đường. Bánh có tên gọi như vậy là do xuất phát từ thành phần cơ bản luôn tuân thủ theo qui tắc cân bằng 1:1:1:1, tức là 1 pound bơ: 1 pound trứng :1 pound đường :1 pound bột. Vì vậy, pound cake là loại bánh đơn giản nhất dành cho những ai mới bắt đầu bước vào con đường làm bánh. Không chỉ có quy tắc rõ ràng, pound cake còn không hề có bất cứ một loại chất lỏng nào trong công thức như sữa hay nước trái cây.",
+  "tym": 0,
+  "createdAt": {
+    "$date": "2021-12-08T06:44:13.801Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-08T06:44:13.801Z"
+  },
+  "priceDiscount": 96000
+},{
+  "_id": {
+    "$oid": "61b055c8f3db519e5de0ef6e"
+  },
+  "name": "Bánh pound",
+  "price": 70000,
+  "image": "/image/cake/banh-pound.jpg",
+  "discount": 15,
+  "typeCake": {
+    "name": "Bánh bông lan",
+    "image": "/image/type-cake/type-banh-bong-lan.jpg",
+    "_id": {
+      "$oid": "61b051e83ad22e2f872d7b54"
+    },
+    "updatedAt": {
+      "$date": "2021-12-06T16:52:51.379Z"
+    },
+    "createdAt": {
+      "$date": "2021-12-06T16:52:51.379Z"
+    }
+  },
+  "description": "Pound cake với thành phần chính gồm bột, bơ, trứng, đường. Bánh có tên gọi như vậy là do xuất phát từ thành phần cơ bản luôn tuân thủ theo qui tắc cân bằng 1:1:1:1, tức là 1 pound bơ: 1 pound trứng :1 pound đường :1 pound bột. Vì vậy, pound cake là loại bánh đơn giản nhất dành cho những ai mới bắt đầu bước vào con đường làm bánh. Không chỉ có quy tắc rõ ràng, pound cake còn không hề có bất cứ một loại chất lỏng nào trong công thức như sữa hay nước trái cây.",
+  "tym": 0,
+  "createdAt": {
+    "$date": "2021-12-08T06:50:48.067Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-08T06:50:48.067Z"
+  },
+  "priceDiscount": 59500
+},{
+  "_id": {
+    "$oid": "61b05605f3db519e5de0ef7b"
+  },
+  "name": "Bánh chiffon",
+  "price": 100000,
+  "image": "/image/cake/banh-chiffon.jpg",
+  "discount": 35,
+  "typeCake": {
+    "name": "Bánh bông lan",
+    "image": "/image/type-cake/type-banh-bong-lan.jpg",
+    "_id": {
+      "$oid": "61b051e83ad22e2f872d7b54"
+    },
+    "updatedAt": {
+      "$date": "2021-12-06T16:52:51.379Z"
+    },
+    "createdAt": {
+      "$date": "2021-12-06T16:52:51.379Z"
+    }
+  },
+  "description": "Chiffon cake là loại bánh tiêu biểu cho dòng foam cake này. Cốt bánh thực sự là một thử thách dành cho những ai muốn thử sức với thể loại bánh nhẹ mềm này. Bánh được làm rất ít bột, tất cả đều hoàn toàn dựa vào bọt khí trong lòng trắng trứng sau khi đã tách ra được đánh bông để tạo độ nhẹ mềm và khiến bánh nở phồng. Công thức của bánh hoàn toàn không cố định và thường thay đổi tùy theo người làm bánh. Tuy nhiên nguyên liệu để làm thì vẫn chỉ là trứng, bột, sữa hay nước trái cây, đường và các nguyên liệu phụ khác (không hề có bột nở hay muối nở và bơ).",
+  "tym": 0,
+  "createdAt": {
+    "$date": "2021-12-08T06:51:49.153Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-08T06:51:49.153Z"
+  },
+  "priceDiscount": 65000
+},{
+  "_id": {
+    "$oid": "61b0564df3db519e5de0ef89"
+  },
+  "name": "Bánh sponge",
+  "price": 150000,
+  "image": "/image/cake/banh-sponge.jpg",
+  "discount": 10,
+  "typeCake": {
+    "name": "Bánh bông lan",
+    "image": "/image/type-cake/type-banh-bong-lan.jpg",
+    "_id": {
+      "$oid": "61b051e83ad22e2f872d7b54"
+    },
+    "updatedAt": {
+      "$date": "2021-12-06T16:52:51.379Z"
+    },
+    "createdAt": {
+      "$date": "2021-12-06T16:52:51.379Z"
+    }
+  },
+  "description": "Sponge cake được tạo ra có đặc tính xốp mềm, nhẹ nhàng đặc trừng của dòng foam cake nhưng phần cốt bánh bên trong cứng cáp hơn, chắc chắn hơn, hoàn toàn có thể trang trí bất kì loại kem và nguyên liệu nặng nào bên trên mà không lo bánh bị xụp đổ.",
+  "tym": 0,
+  "createdAt": {
+    "$date": "2021-12-08T06:53:01.291Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-08T06:53:01.291Z"
+  },
+  "priceDiscount": 135000
+},{
+  "_id": {
+    "$oid": "61b0571b6f044e8a087ab918"
+  },
+  "name": "Bánh bông lan trứng muối",
+  "price": 150000,
+  "image": "/image/cake/banh-trung-muoi.jpg",
+  "discount": 10,
+  "typeCake": {
+    "name": "Bánh bông lan",
+    "image": "/image/type-cake/type-banh-bong-lan.jpg",
+    "_id": {
+      "$oid": "61b051e83ad22e2f872d7b54"
+    },
+    "updatedAt": {
+      "$date": "2021-12-06T16:52:51.379Z"
+    },
+    "createdAt": {
+      "$date": "2021-12-06T16:52:51.379Z"
+    }
+  },
+  "description": "Bánh bông lan trứng muối là món ăn vặt thơm ngon, bổ dưỡng được nhiều người yêu thích. Thường xuất hiện dưới hình dáng những chiếc cupcake nhỏ nhắn xinh xắn nhưng ít ai biết rằng bánh bông lan trứng muối còn có thể được làm thành bánh cỡ lớn để dùng làm món quà nhân dịp sinh nhật hay các ngày lễ kỷ niệm khác. Đây sẽ một món quà vô cùng độc đáo, mới mẻ, lạ miệng mà bạn có thể dành tặng người thân, bạn bè của mình để thay đổi không khí, thay đổi khẩu vị trong ngày vui.  ",
+  "tym": 0,
+  "createdAt": {
+    "$date": "2021-12-08T06:56:27.625Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-08T06:56:27.625Z"
+  },
+  "priceDiscount": 135000
+},{
+  "_id": {
+    "$oid": "61b057be6f044e8a087ab929"
+  },
+  "name": "Bánh donut không nhân",
+  "price": 55000,
+  "image": "/image/cake/donut-khong-nhan.jpg",
+  "discount": 5,
+  "typeCake": {
+    "name": "Bánh donut",
+    "image": "/image/type-cake/type-banh-donut.jpg",
+    "_id": {
+      "$oid": "61b051fd3ad22e2f872d7b55"
+    },
+    "updatedAt": {
+      "$date": "2021-12-06T16:52:51.379Z"
+    },
+    "createdAt": {
+      "$date": "2021-12-06T16:52:51.379Z"
+    }
+  },
+  "description": "Bánh bông lan trứng muối là món ăn vặt thơm ngon, bổ dưỡng được nhiều người yêu thích. Thường xuất hiện dưới hình dáng những chiếc cupcake nhỏ nhắn xinh xắn nhưng ít ai biết rằng bánh bông lan trứng muối còn có thể được làm thành bánh cỡ lớn để dùng làm món quà nhân dịp sinh nhật hay các ngày lễ kỷ niệm khác. Đây sẽ một món quà vô cùng độc đáo, mới mẻ, lạ miệng mà bạn có thể dành tặng người thân, bạn bè của mình để thay đổi không khí, thay đổi khẩu vị trong ngày vui.  ",
+  "tym": 0,
+  "createdAt": {
+    "$date": "2021-12-08T06:59:10.202Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-08T06:59:10.202Z"
+  },
+  "priceDiscount": 52250
+},{
+  "_id": {
+    "$oid": "61b057e66f044e8a087ab92c"
+  },
+  "name": "Bánh donut có nhân",
+  "price": 75000,
+  "image": "/image/cake/donut-co-nhan.jpg",
+  "discount": 2,
+  "typeCake": {
+    "name": "Bánh donut",
+    "image": "/image/type-cake/type-banh-donut.jpg",
+    "_id": {
+      "$oid": "61b051fd3ad22e2f872d7b55"
+    },
+    "updatedAt": {
+      "$date": "2021-12-06T16:52:51.379Z"
+    },
+    "createdAt": {
+      "$date": "2021-12-06T16:52:51.379Z"
+    }
+  },
+  "description": "Bánh bông lan trứng muối là món ăn vặt thơm ngon, bổ dưỡng được nhiều người yêu thích. Thường xuất hiện dưới hình dáng những chiếc cupcake nhỏ nhắn xinh xắn nhưng ít ai biết rằng bánh bông lan trứng muối còn có thể được làm thành bánh cỡ lớn để dùng làm món quà nhân dịp sinh nhật hay các ngày lễ kỷ niệm khác. Đây sẽ một món quà vô cùng độc đáo, mới mẻ, lạ miệng mà bạn có thể dành tặng người thân, bạn bè của mình để thay đổi không khí, thay đổi khẩu vị trong ngày vui.  ",
+  "tym": 0,
+  "createdAt": {
+    "$date": "2021-12-08T06:59:50.621Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-08T06:59:50.621Z"
+  },
+  "priceDiscount": 73500
+},{
+  "_id": {
+    "$oid": "61b058766f044e8a087ab93f"
+  },
+  "name": "Bánh quy bơ Danisa",
+  "price": 75000,
+  "image": "/image/cake/banh-quy-danisa.jpg",
+  "discount": 2,
+  "typeCake": {
+    "name": "Bánh quy",
+    "image": "/image/type-cake/type-banh-quy.jpg",
+    "_id": {
+      "$oid": "61ae3fe3c640c0becb4fe86f"
+    },
+    "updatedAt": {
+      "$date": "2021-12-06T16:52:51.379Z"
+    },
+    "createdAt": {
+      "$date": "2021-12-06T16:52:51.379Z"
+    }
+  },
+  "description": "Bánh quy bơ Danisa được sản xuất dựa trên dây chuyền công nghệ hiện đại của Đan Mạch nên đảm bảo tiêu chuẩn về hình dáng cũng như mùi vị béo ngậy, thơm ngon của bánh. Thiết kế bên ngoài của bánh vô cùng bắt mắt, mang phong cách hoàng gia sang trọng.Bánh chứa đựng hương vị tinh túy, thơm ngon khi mở hộp bánh ra, những chiếc bánh vàng giòn chắc chắn sẽ làm bạn không thể chối từ. ",
+  "tym": 0,
+  "createdAt": {
+    "$date": "2021-12-08T07:02:14.533Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-08T07:02:14.533Z"
+  },
+  "priceDiscount": 73500
+},{
+  "_id": {
+    "$oid": "61b058a86f044e8a087ab952"
+  },
+  "name": "Bánh quy bơ LU",
+  "price": 75000,
+  "image": "/image/cake/banh-quy-lu.jpg",
+  "discount": 2,
+  "typeCake": {
+    "name": "Bánh quy",
+    "image": "/image/type-cake/type-banh-quy.jpg",
+    "_id": {
+      "$oid": "61ae3fe3c640c0becb4fe86f"
+    },
+    "updatedAt": {
+      "$date": "2021-12-06T16:52:51.379Z"
+    },
+    "createdAt": {
+      "$date": "2021-12-06T16:52:51.379Z"
+    }
+  },
+  "description": "Bánh quy bơ Danisa được sản xuất dựa trên dây chuyền công nghệ hiện đại của Đan Mạch nên đảm bảo tiêu chuẩn về hình dáng cũng như mùi vị béo ngậy, thơm ngon của bánh. Thiết kế bên ngoài của bánh vô cùng bắt mắt, mang phong cách hoàng gia sang trọng.Bánh chứa đựng hương vị tinh túy, thơm ngon khi mở hộp bánh ra, những chiếc bánh vàng giòn chắc chắn sẽ làm bạn không thể chối từ. ",
+  "tym": 0,
+  "createdAt": {
+    "$date": "2021-12-08T07:03:04.703Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-08T07:03:04.703Z"
+  },
+  "priceDiscount": 73500
+},{
+  "_id": {
+    "$oid": "61b059876f044e8a087ab978"
+  },
+  "name": "Bánh gato",
+  "price": 150000,
+  "image": "/image/cake/banh-sn-gato.jpg",
+  "discount": 2,
+  "typeCake": {
+    "name": "Bánh sinh nhật",
+    "image": "/image/type-cake/type-birthday.jpg",
+    "_id": {
+      "$oid": "61ae3fdfc640c0becb4fe86d"
+    },
+    "updatedAt": {
+      "$date": "2021-12-06T16:52:47.404Z"
+    },
+    "createdAt": {
+      "$date": "2021-12-06T16:52:47.404Z"
+    }
+  },
+  "description": "Bánh sinh nhật Gato được sản xuất dựa trên dây chuyền công nghệ hiện đại của Đan Mạch nên đảm bảo tiêu chuẩn về hình dáng cũng như mùi vị béo ngậy, thơm ngon của bánh. Thiết kế bên ngoài của bánh vô cùng bắt mắt, mang phong cách hoàng gia sang trọng.Bánh chứa đựng hương vị tinh túy, thơm ngon khi mở hộp bánh ra, những chiếc bánh vàng giòn chắc chắn sẽ làm bạn không thể chối từ. ",
+  "tym": 0,
+  "createdAt": {
+    "$date": "2021-12-08T07:06:47.544Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-08T07:06:47.544Z"
+  },
+  "priceDiscount": 147000
+},{
+  "_id": {
+    "$oid": "61b059a76f044e8a087ab98d"
+  },
+  "name": "Bánh Cheesecake",
+  "price": 150000,
+  "image": "/image/cake/banh-sn-cheesecake.jpeg",
+  "discount": 2,
+  "typeCake": {
+    "name": "Bánh sinh nhật",
+    "image": "/image/type-cake/type-birthday.jpg",
+    "_id": {
+      "$oid": "61ae3fdfc640c0becb4fe86d"
+    },
+    "updatedAt": {
+      "$date": "2021-12-06T16:52:47.404Z"
+    },
+    "createdAt": {
+      "$date": "2021-12-06T16:52:47.404Z"
+    }
+  },
+  "description": "Bánh sinh nhật Gato được sản xuất dựa trên dây chuyền công nghệ hiện đại của Đan Mạch nên đảm bảo tiêu chuẩn về hình dáng cũng như mùi vị béo ngậy, thơm ngon của bánh. Thiết kế bên ngoài của bánh vô cùng bắt mắt, mang phong cách hoàng gia sang trọng.Bánh chứa đựng hương vị tinh túy, thơm ngon khi mở hộp bánh ra, những chiếc bánh vàng giòn chắc chắn sẽ làm bạn không thể chối từ. ",
+  "tym": 0,
+  "createdAt": {
+    "$date": "2021-12-08T07:07:19.964Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-08T07:07:19.964Z"
+  },
+  "priceDiscount": 147000
+},{
+  "_id": {
+    "$oid": "61b059c96f044e8a087ab9a3"
+  },
+  "name": "Bánh kem lạnh",
+  "price": 170000,
+  "image": "/image/cake/banh-sn-kem-lanh.jpg",
+  "discount": 5,
+  "typeCake": {
+    "name": "Bánh sinh nhật",
+    "image": "/image/type-cake/type-birthday.jpg",
+    "_id": {
+      "$oid": "61ae3fdfc640c0becb4fe86d"
+    },
+    "updatedAt": {
+      "$date": "2021-12-06T16:52:47.404Z"
+    },
+    "createdAt": {
+      "$date": "2021-12-06T16:52:47.404Z"
+    }
+  },
+  "description": "Bánh sinh nhật Gato được sản xuất dựa trên dây chuyền công nghệ hiện đại của Đan Mạch nên đảm bảo tiêu chuẩn về hình dáng cũng như mùi vị béo ngậy, thơm ngon của bánh. Thiết kế bên ngoài của bánh vô cùng bắt mắt, mang phong cách hoàng gia sang trọng.Bánh chứa đựng hương vị tinh túy, thơm ngon khi mở hộp bánh ra, những chiếc bánh vàng giòn chắc chắn sẽ làm bạn không thể chối từ. ",
+  "tym": 0,
+  "createdAt": {
+    "$date": "2021-12-08T07:07:53.608Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-08T07:07:53.608Z"
+  },
+  "priceDiscount": 161500
+}]

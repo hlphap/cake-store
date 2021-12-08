@@ -10,7 +10,7 @@ const index = catchAsync(async (req, res) => {
         cakes: multipleMongooseToObject(cakes),
     };
     return res.render('user/menu', {
-        title: 'Đặt hàng', //  Required Title
+        title: 'Sản phẩm', //  Required Title
         styles: ['layout-user', 'header', 'footer', 'menu'], // Required Stylesheet name from public
         scripts: [], // Required Script name from public
         data,
@@ -34,7 +34,24 @@ const showCake = catchAsync(async (req, res) => {
     });
 });
 
+const showCakeByTypeCake = catchAsync(async (req, res) => {
+    const { user } = req;
+    const { typeCakeID } = req.params;
+    const cakes = await cakeService.getCakesByTypeCake(typeCakeID);
+    const data = {
+        user,
+        cakes: multipleMongooseToObject(cakes),
+    };
+    return res.render('user/menu', {
+        title: 'Sản phẩm', //  Required Title
+        styles: ['layout-user', 'header', 'footer', 'menu'], // Required Stylesheet name from public
+        scripts: [], // Required Script name from public
+        data,
+    });
+});
+
 module.exports = {
     index,
     showCake,
+    showCakeByTypeCake,
 };

@@ -1,0 +1,91 @@
+[{
+  "_id": {
+    "$oid": "61ab485c13edb1940b3be006"
+  },
+  "email": "longphappy@gmail.com",
+  "password": "$2a$10$Gx416pNrUGnNqbcNZkTr1edtU/9az3RPy341J/C8Dmc0OYIOhoe/W",
+  "fullName": "Huỳnh Long Pháp",
+  "birthday": "0242-12-19",
+  "image": "image/UserAccount.png",
+  "address": {
+    "province": {
+      "$oid": "60b7a50331c6ba3de5e7a353"
+    },
+    "district": {
+      "$oid": "60b7a50631c6ba3de5e7a5ff"
+    },
+    "ward": {
+      "$oid": "60b7a51331c6ba3de5e7cc59"
+    },
+    "_id": {
+      "$oid": "61ae423283ff97e4af225b6e"
+    }
+  },
+  "role": "ADMIN",
+  "createdAt": {
+    "$date": "2021-12-04T10:52:12.929Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:02:42.269Z"
+  }
+},{
+  "_id": {
+    "$oid": "61aba6a2a343ca9189edfbb7"
+  },
+  "email": "longphappy1@gmail.com",
+  "password": "$2a$10$c7B7HDfUIXWhAIBi0qrouOJVuxGOPlrMiT1FnRNnBB4WmndoWMj.O",
+  "fullName": "Phap",
+  "birthday": "2021-12-29",
+  "image": "image/UserAccount.png",
+  "address": {
+    "province": {
+      "$oid": "60b7a50331c6ba3de5e7a351"
+    },
+    "district": {
+      "$oid": "60b7a50631c6ba3de5e7a5e5"
+    },
+    "ward": {
+      "$oid": "60b7a51231c6ba3de5e7cb08"
+    },
+    "_id": {
+      "$oid": "61aba6a2a343ca9189edfbb8"
+    }
+  },
+  "role": "USER",
+  "createdAt": {
+    "$date": "2021-12-04T17:34:26.817Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T17:34:26.817Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ae2a6cc263d7eaee70778d"
+  },
+  "email": "hoainam1@gmail.com",
+  "password": "$2a$10$/KbSTwifAMHCqiwTNG/9euUwaRNDt9cXHch/3xxGKBVlZ9K7SNSOy",
+  "fullName": "Nam Nguyễn",
+  "birthday": "2021-02-03",
+  "image": "image/UserAccount.png",
+  "address": {
+    "province": {
+      "$oid": "60b7a50331c6ba3de5e7a351"
+    },
+    "district": {
+      "$oid": "60b7a50631c6ba3de5e7a5de"
+    },
+    "ward": {
+      "$oid": "60b7a51231c6ba3de5e7caa1"
+    },
+    "_id": {
+      "$oid": "61ae2a6cc263d7eaee70778e"
+    }
+  },
+  "role": "USER",
+  "createdAt": {
+    "$date": "2021-12-06T15:21:16.568Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T15:21:58.368Z"
+  }
+}]

@@ -33,33 +33,31 @@
     </div>
     <div class='row'>
         {{#each data.cakes}}
-            <a type='button' href='/menu/{{this._id}}' class='col-lg-3 col-md-6 col-sm-6 item'>
-                <div class='discount'> -{{this.discount}}%</div>
-                <div class='product'>
-                    <table class=''>
-                        <tr>
-                            <td>
-                                <img class='cake' src='{{this.image}}' />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class='product_text'>
-                                <div class='vote'>
-                                    {{this.typeCake.name}}
-                                    <span class='star'><img
-                                            class='img-star'
-                                            src='https://img.icons8.com/color/96/000000/like--v3.png'
-                                        />{{this.tym}}
-                                    </span>
-                                </div>
-                                <div class='product_name'>{{this.name}}</div>
-                                <span class='price'><del>{{this.price}} đ </del>{{this.priceDiscount}} </span>
-                                <img class='cart' src='/image/menu/Cart.png' />
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </a>
+        <a type='button' href='/menu/{{this._id}}' class='col-lg-3 col-md-6 col-sm-6 item'>
+            <div class='discount'> -{{this.discount}}%</div>
+            <div class='product'>
+                <table class=''>
+                    <tr>
+                        <td>
+                            <img class='cake' src='{{this.image}}' />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class='product_text'>
+                            <div class='vote'>
+                                {{this.typeCake.name}}
+                                <span class='star'><img class='img-star'
+                                        src='https://img.icons8.com/color/96/000000/like--v3.png' />{{this.tym}}
+                                </span>
+                            </div>
+                            <div class='product_name'>{{this.name}}</div>
+                            <span class='price'><del>{{this.price}} đ </del>{{this.priceDiscount}} đ </span>
+                            <img class='cart' src='/image/menu/Cart.png' />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </a>
         {{/each}}
     </div>
     <!-- <div class='row'>
