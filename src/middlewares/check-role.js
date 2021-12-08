@@ -8,7 +8,7 @@ const checkRole = (roles) => async (req, res, next) => {
             httpStatus.UNAUTHORIZED,
             `Unauthorized - Insufficient user rights. Current role: ${role}. Required role: ${roles.toString()}`,
         );
-        return next(error);
+        return res.redirect('/');
     }
     return next();
 };

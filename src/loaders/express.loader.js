@@ -1,6 +1,4 @@
-const compression = require('compression');
 const express = require('express');
-const mongoSanitize = require('express-mongo-sanitize');
 const morgan = require('morgan');
 const cookieParser = require('cookie-parser');
 
@@ -22,12 +20,6 @@ module.exports = () => {
 
     //cookie middleware
     app.use(cookieParser());
-
-    // sanitize request data
-    app.use(mongoSanitize());
-
-    // gzip compression
-    app.use(compression());
 
     // set cors blocked resources
 
