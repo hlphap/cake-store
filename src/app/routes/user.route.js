@@ -4,12 +4,13 @@ const { checkRole } = require('../../middlewares/check-role');
 const { userController } = require('../controllers');
 const { userValidation } = require('../validations');
 const validate = require('../../middlewares/validate');
+const checkUserLogged = require('../../middlewares/check-user-logged');
 
 const router = express.Router();
 
 router.get('/profile', userController.profile);
 router.post('/add-cart', userController.addToCart);
-router.get('/checkout', userController.checkout);
+router.get('/checkout', checkUserLogged, userController.checkout);
 router.get('/', passport.authenticate('jwt', { session: false }), checkRole('ADMIN'), userController.getUsers);
 router.post(
     '/',
