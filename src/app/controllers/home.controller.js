@@ -1,10 +1,16 @@
 const catchAsync = require('../../utils/catch-async');
+const { multipleMongooseToObject } = require('../../utils/switchObject');
+const { typeCakeService, cakeService } = require('../services');
 
 const index = catchAsync(async (req, res) => {
     const { user } = req;
+    const typeCakes = await typeCakeService.getTypeCakes();
+    const cakes = await cakeService.getCakes();
     const data = {
         cake: [],
         user,
+        typeCakes: multipleMongooseToObject(typeCakes),
+        cakes: multipleMongooseToObject(cakes),
     };
     // Select view to render
     return res.render('user/home', {

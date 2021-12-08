@@ -16,19 +16,19 @@ formChangePassword.addEventListener('submit', (event) => {
             },
         })
         .then((response) => {
-            $('#alert').html(`<div class="alert alert-success fade show" id='test123' role="alert">
+            $('#alert').html(`<div class="alert alert-success fade show" id='alertLog' role="alert">
                                     Thay đổi mật khẩu thành công
                             </div>`);
             setTimeout(() => {
-                $('#test123').alert('close');
+                $('#alertLog').alert('close');
             }, 4000);
         })
         .catch((error) => {
-            $('#alert').html(`<div class="alert alert-danger fade show" id='test123' role="alert">
+            $('#alert').html(`<div class="alert alert-danger fade show" id='alertLog' role="alert">
                                     ${error.response.data.message}
                             </div>`);
             setTimeout(() => {
-                $('#test123').alert('close');
+                $('#alertLog').alert('close');
             }, 4000);
         });
 });

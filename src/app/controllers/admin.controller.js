@@ -1,6 +1,6 @@
 const catchAsync = require('../../utils/catch-async');
-const { mongooseToObject,multipleMongooseToObject } = require('../../utils/switchObject');
-const { cakeService } = require('../services');
+const { mongooseToObject, multipleMongooseToObject } = require('../../utils/switchObject');
+const { cakeService, typeCakeService } = require('../services');
 const index = catchAsync(async (req, res) => {
     const { user } = req;
     const data = {
@@ -64,10 +64,10 @@ const info = catchAsync(async (req, res) => {
     });
 });
 const managerCake = catchAsync(async (req, res) => {
-    const cakes= await cakeService.getCakes()
-    const data={
-        cakes:multipleMongooseToObject(cakes),
-    }
+    const cakes = await cakeService.getCakes();
+    const data = {
+        cakes: multipleMongooseToObject(cakes),
+    };
     res.render('admin/managerCake', {
         data,
         layout: 'admin',
@@ -88,94 +88,94 @@ const managerCake = catchAsync(async (req, res) => {
 const managerReceipt = catchAsync(async (req, res) => {
     const data = [
         {
-            name:"cake1",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
+            name: 'cake1',
+            price: 123000,
+            typeCake: {
+                name: 'banh ngot',
             },
-            description:"123123"
+            description: '123123',
         },
         {
-            name:"cake2",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
+            name: 'cake2',
+            price: 123000,
+            typeCake: {
+                name: 'banh ngot',
             },
-            description:"123123"
+            description: '123123',
         },
         {
-            name:"cake3",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
+            name: 'cake3',
+            price: 123000,
+            typeCake: {
+                name: 'banh ngot',
             },
-            description:"123123"
+            description: '123123',
         },
         {
-            name:"cake4",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
+            name: 'cake4',
+            price: 123000,
+            typeCake: {
+                name: 'banh ngot',
             },
-            description:"123123"
+            description: '123123',
         },
         {
-            name:"cake4",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
+            name: 'cake4',
+            price: 123000,
+            typeCake: {
+                name: 'banh ngot',
             },
-            description:"123123"
+            description: '123123',
         },
         {
-            name:"cake4",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
+            name: 'cake4',
+            price: 123000,
+            typeCake: {
+                name: 'banh ngot',
             },
-            description:"123123"
+            description: '123123',
         },
         {
-            name:"cake4",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
+            name: 'cake4',
+            price: 123000,
+            typeCake: {
+                name: 'banh ngot',
             },
-            description:"123123"
+            description: '123123',
         },
         {
-            name:"cake4",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
+            name: 'cake4',
+            price: 123000,
+            typeCake: {
+                name: 'banh ngot',
             },
-            description:"123123"
+            description: '123123',
         },
         {
-            name:"cake4",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
+            name: 'cake4',
+            price: 123000,
+            typeCake: {
+                name: 'banh ngot',
             },
-            description:"123123"
+            description: '123123',
         },
         {
-            name:"cake4",
-            price:123000324234,
-            typeCake:{
-                name:"banh ngot"
+            name: 'cake4',
+            price: 123000324234,
+            typeCake: {
+                name: 'banh ngot',
             },
-            description:"123123"
+            description: '123123',
         },
         {
-            name:"cake4",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
+            name: 'cake4',
+            price: 123000,
+            typeCake: {
+                name: 'banh ngot',
             },
-            description:"123123"
+            description: '123123',
         },
-    ]
+    ];
     res.render('admin/managerReceipt', {
         data,
         layout: 'admin',
@@ -195,94 +195,94 @@ const managerReceipt = catchAsync(async (req, res) => {
 const managerAccount = catchAsync(async (req, res) => {
     const data = [
         {
-            name:"cake1",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
+            name: 'cake1',
+            price: 123000,
+            typeCake: {
+                name: 'banh ngot',
             },
-            description:"123123"
+            description: '123123',
         },
         {
-            name:"cake2",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
+            name: 'cake2',
+            price: 123000,
+            typeCake: {
+                name: 'banh ngot',
             },
-            description:"123123"
+            description: '123123',
         },
         {
-            name:"cake3",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
+            name: 'cake3',
+            price: 123000,
+            typeCake: {
+                name: 'banh ngot',
             },
-            description:"123123"
+            description: '123123',
         },
         {
-            name:"cake4",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
+            name: 'cake4',
+            price: 123000,
+            typeCake: {
+                name: 'banh ngot',
             },
-            description:"123123"
+            description: '123123',
         },
         {
-            name:"cake4",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
+            name: 'cake4',
+            price: 123000,
+            typeCake: {
+                name: 'banh ngot',
             },
-            description:"123123"
+            description: '123123',
         },
         {
-            name:"cake4",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
+            name: 'cake4',
+            price: 123000,
+            typeCake: {
+                name: 'banh ngot',
             },
-            description:"123123"
+            description: '123123',
         },
         {
-            name:"cake4",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
+            name: 'cake4',
+            price: 123000,
+            typeCake: {
+                name: 'banh ngot',
             },
-            description:"123123"
+            description: '123123',
         },
         {
-            name:"cake4",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
+            name: 'cake4',
+            price: 123000,
+            typeCake: {
+                name: 'banh ngot',
             },
-            description:"123123"
+            description: '123123',
         },
         {
-            name:"cake4",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
+            name: 'cake4',
+            price: 123000,
+            typeCake: {
+                name: 'banh ngot',
             },
-            description:"123123"
+            description: '123123',
         },
         {
-            name:"cake4",
-            price:123000324234,
-            typeCake:{
-                name:"banh ngot"
+            name: 'cake4',
+            price: 123000324234,
+            typeCake: {
+                name: 'banh ngot',
             },
-            description:"123123"
+            description: '123123',
         },
         {
-            name:"cake4",
-            price:123000,
-            typeCake:{
-                name:"banh ngot"
+            name: 'cake4',
+            price: 123000,
+            typeCake: {
+                name: 'banh ngot',
             },
-            description:"123123"
+            description: '123123',
         },
-    ]
+    ];
     res.render('admin/managerAccount', {
         data,
         layout: 'admin',
@@ -301,64 +301,14 @@ const managerAccount = catchAsync(async (req, res) => {
 });
 
 const managerTypeCake = catchAsync(async (req, res) => {
-    const data = [
-        {
-            id:'TypeCake1',
-            name:"Bánh ngọt",
-            
-        },
-        {
-            id:'TypeCake1',
-            name:"Bánh ngọt2",
-            
-        },
-        {
-            id:'TypeCake1',
-            name:"Bánh ngọt3",
-            
-        },
-        {
-            id:'TypeCake1',
-            name:"Bánh ngọt4",
-           
-        },
-        {
-            id:'TypeCake1',
-            name:"Bánh ngọt5",
-           
-        },
-        {
-            id:'TypeCake1',
-            name:"Bánh ngọt6",
-           
-        },
-        {
-            id:'TypeCake1',
-            name:"Bánh ngọt7",
-        
-        },
-        {
-            id:'TypeCake1',
-            name:"Bánh ngọt8",
-           
-        },
-        {
-            id:'TypeCake1',
-            name:"Bánh ngọt9",            
-        },
-        {
-            id:'TypeCake1',
-            name:"Bánh kem",           
-        },
-        {
-            id:'TypeCake1',
-            name:"Bánh kem2",           
-        },
-    ]
+    const typeCakes = await typeCakeService.getTypeCakes();
+    const data = {
+        typeCakes: multipleMongooseToObject(typeCakes),
+    };
     res.render('admin/managerTypeCake', {
         data,
         layout: 'admin',
-        styles: ['sidebar', 'layout-admin', 'breadcrumb'],
+        styles: ['sidebar', 'layout-admin', 'breadcrumb', 'mana-type-cake'],
         breadcrumbsItem: [
             {
                 title: 'Quản lý dịch vụ',

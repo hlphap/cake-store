@@ -11,6 +11,9 @@ const CakeSchema = mongoose.Schema(
             type: Number,
             required: true,
         },
+        priceDiscount: {
+            type: Number,
+        },
         image: {
             type: String,
         },
@@ -25,12 +28,21 @@ const CakeSchema = mongoose.Schema(
             type: String,
             required: true,
         },
+        tym: {
+            type: Number,
+            default: 0,
+        },
     },
     {
         timestamps: true,
         versionKey: false,
     },
 );
+
+CakeSchema.pre('save', async function (next) {
+    this.priceDiscount = this.price - this.price * (this.discount / 100);
+    next();
+});
 
 const Cake = mongoose.model('cakes', CakeSchema);
 

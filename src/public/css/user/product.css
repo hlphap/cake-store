@@ -1,3 +1,7 @@
+.product {
+  width: fit-content;
+  margin: 0 auto; }
+
 .product-container {
   border-radius: 5px;
   max-width: 900px;
@@ -6,6 +10,11 @@
 .product-image {
   width: 400px;
   border-radius: 5px; }
+
+.product-text-price {
+  font-size: 16px;
+  font-weight: 700;
+  opacity: 0.8; }
 
 .product-descriptions {
   margin-top: 5%;

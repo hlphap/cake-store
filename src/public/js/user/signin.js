@@ -13,6 +13,14 @@ if (formLogin) {
             .then((response) => {
                 window.location = response.data.user.role === 'USER' ? '/' : '/admin/user/info';
             })
-            .catch((error) => console.error(error));
+            .catch((error) => {
+                console.log(error.response.data.message);
+                $('#alert').html(`<div class="alert alert-danger fade show" id='alertLog' role="alert">
+                                    ${error.response.data.message}
+                            </div>`);
+                setTimeout(() => {
+                    $('#alertLog').alert('close');
+                }, 4000);
+            });
     });
 }

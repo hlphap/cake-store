@@ -1,34 +1,40 @@
 const catchAsync = require('../../utils/catch-async');
+const { multipleMongooseToObject, mongooseToObject } = require('../../utils/switchObject');
+const { cakeService } = require('../services');
 
 const index = catchAsync(async (req, res) => {
     const { user } = req;
-    const orders = [
-        {
-            name: 'RED VELVET CAKE',
-            price: 250000,
-            expiration: 27 - 12 - 2000,
-            description: 'Bánh ngon nhất hạng',
-            typeCake: {
-                id: '123',
-                name: 'Bánh sinh nhật',
-            },
-            numTym: 15,
-            discount: 25,
-            image: '/image/menu/red_velvet.jpg',
-        },
-    ];
+    const cakes = await cakeService.getCakes();
     const data = {
         user,
-        orders,
+        cakes: multipleMongooseToObject(cakes),
     };
     return res.render('user/menu', {
-        title: 'Menu', //  Required Title
+        title: 'Đặt hàng', //  Required Title
         styles: ['layout-user', 'header', 'footer', 'menu'], // Required Stylesheet name from public
         scripts: [], // Required Script name from public
         data,
     });
 });
 
+const showCake = catchAsync(async (req, res) => {
+    const { user } = req;
+    const { cakeID } = req.params;
+    const cake = await cakeService.getCakeById(cakeID);
+    const data = {
+        cake: mongooseToObject(cake),
+        user,
+    };
+    // Select view to render
+    res.render('user/product', {
+        styles: ['header', 'footer', 'product', 'layout-user'], // Required Stylesheet name from public
+        scripts: ['product', 'header'], // Required Script name from public
+        title: 'Chi tiết bánh',
+        data,
+    });
+});
+
 module.exports = {
     index,
+    showCake,
 };
