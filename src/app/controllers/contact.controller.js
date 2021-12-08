@@ -1,4 +1,5 @@
 const catchAsync = require('../../utils/catch-async');
+const { mongooseToObject } = require('../../utils/switchObject');
 
 const index = catchAsync(async (req, res) => {
     const { user } = req;
