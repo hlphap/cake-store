@@ -44,14 +44,13 @@
                                 <img class='user-image' src="\image\UserAccount.png" alt="User Account">
                             </div>
                             <div class="ml-3">
-                                <h6>Minh</h6>
-                                <p>minh@gmail.com</p>
+                                <h6>{{data.user.fullName}}</h6>
+                                <p>{{data.user.email}}</p>
                             </div>
                         </li>
                         <hr>
                         <li>
-                            <a href="">Viết Blog</a>
-                            <a href="">Bài viết của tôi</a>
+                            <a href="/users/profile/{{data.user._id}}">Thông tin cá nhân</a>
                         </li>
                         <hr>
                         <li>
@@ -59,14 +58,14 @@
                         </li>
                         <hr>
                         <li>
-                            <a href="/users/profile">Thông tin cá nhân</a>
-                            <button id='btnLogout' style="color: red;">Đăng xuất</button>
+                            <button class='btnLogout' style="color: red;">Đăng xuất</button>
                         </li>
                     </ul>
                 </li>
             </ul>
             <p style="display: none;" id="loginBtn"></p>
             <p style="display: none;" id="registryBtn"></p>
+            
             {{else}}
             <div class='user-container'>
                 <div class="user-container-login">
@@ -80,6 +79,7 @@
             </div>
             <div class="user-container-nav-item" style="display: none"></div>
             <div class="user-nav" style="display: none"></div>
+            <div class='btnLogout' style="display: none"></div>
             {{/if}}
         </div>
 </nav>
