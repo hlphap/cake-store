@@ -21,21 +21,21 @@
             <!-- type cake -->
             <div class='home-type-cake'>
                 <div class='row'>
-                    <img
-                        class='logo-title'
-                        src='https://img.icons8.com/external-photo3ideastudio-flat-photo3ideastudio/64/000000/external-bakery-august-bakery-photo3ideastudio-flat-photo3ideastudio.png'
-                    />
+                    <img class='logo-title'
+                        src='https://img.icons8.com/external-photo3ideastudio-flat-photo3ideastudio/64/000000/external-bakery-august-bakery-photo3ideastudio-flat-photo3ideastudio.png' />
                     <h4>Sản phẩm được yêu thích nhất</h4>
                 </div>
                 <div class='row'>
                     {{#each data.typeCakes}}
-                        <button class='col-sm-3 custom-button'>
+                    <form action='/menu/type-cakes/{{this._id}}'>
+                        <button type='submit' class='col-sm-3 custom-button'>
                             <div style='background-image: url({{this.image}});' class='type-cake-item'>
                             </div>
                             <div class='type-cake-text-item'>
                                 <h5>{{this.name}}</h5>
                             </div>
                         </button>
+                    </form>
                     {{/each}}
                 </div>
             </div>
@@ -43,19 +43,20 @@
             <div class='home-cake'>
                 <div class='row'>
                     {{#each data.cakes}}
-                        <a class='col-sm-3 custom-button' href='/menu/{{this._id}}'>
-                            <div class='cake-item'>
-                                <div class='content-image' style='background-image: url({{this.image}});'>
-                                    <div class='cake-name'>
-                                        <h5>Thêm vào giỏ</h5>
-                                    </div>
-                                </div>
-                                <div class='content-title'>
-                                    <h5>{{this.name}}</h5>
-                                    <h5 class='price'>{{this.priceDiscount}} đ</h5>
-                                </div>
+                    <a class='col-sm-3 custom-button' href='/menu/{{this._id}}'>
+                        <div class='cake-item'>
+                            <div class='content-image' style='background-image: url({{this.image}});'>
+                                <button value='{{this._id}}' type='button' id='btnAddCakeToCart'
+                                    class='cake-name btnAddCakeToCart'>
+                                    <h5>Thêm vào giỏ</h5>
+                                </button>
                             </div>
-                        </a>
+                            <div class='content-title'>
+                                <h5>{{this.name}}</h5>
+                                <h5 class='price'>{{this.priceDiscount}} đ</h5>
+                            </div>
+                        </div>
+                    </a>
                     {{/each}}
                 </div>
             </div>
@@ -65,65 +66,51 @@
         <div class='content-wrap'>
             <!-- Title -->
             <div class='row'>
-                <img
-                    class='logo-title'
-                    src='https://img.icons8.com/external-icongeek26-flat-icongeek26/64/000000/external-news-news-icongeek26-flat-icongeek26.png'
-                />
+                <img class='logo-title'
+                    src='https://img.icons8.com/external-icongeek26-flat-icongeek26/64/000000/external-news-news-icongeek26-flat-icongeek26.png' />
                 <h4>Tin tức</h4>
             </div>
             <!-- Group news -->
             <div class='row'>
                 <button class='col-sm-3 custom-button'>
                     <div class='news-item'>
-                        <div
-                            class='content-image'
-                            style="background-image: url('https://mqflavor.com/wp-content/uploads/2021/02/cac-mon-trang-mieng-ngot-cua-nhat-ban-hap-dan-phan-dong-thuc-khach-850x470.jpg');"
-                        >
+                        <div class='content-image'
+                            style="background-image: url('https://mqflavor.com/wp-content/uploads/2021/02/cac-mon-trang-mieng-ngot-cua-nhat-ban-hap-dan-phan-dong-thuc-khach-850x470.jpg');">
                         </div>
                         <div class='content-title'>
                             <h5>Xu hướng bánh ngọt chi phối thị trường F&B</h5>
                         </div>
                         <div class='content-read-now'>
-                            <a
-                                href='https://mqflavor.com/4-xu-huong-huong-ngot-noi-bat-chi-phoi-thi-truong-fb-2021/'
-                                class='main-btn'
-                            > Đọc ngay</a>
+                            <a href='https://mqflavor.com/4-xu-huong-huong-ngot-noi-bat-chi-phoi-thi-truong-fb-2021/'
+                                class='main-btn'> Đọc ngay</a>
                         </div>
                     </div>
                 </button>
                 <button class='col-sm-3 custom-button'>
                     <div class='news-item'>
-                        <div
-                            class='content-image'
-                            style="background-image: url('https://mqflavor.com/wp-content/uploads/2021/11/banh-mang-huong-socola-dac-biet-duoc-gen-z-va-millennials-yeu-thich-850x470.jpg');"
-                        >
+                        <div class='content-image'
+                            style="background-image: url('https://mqflavor.com/wp-content/uploads/2021/11/banh-mang-huong-socola-dac-biet-duoc-gen-z-va-millennials-yeu-thich-850x470.jpg');">
                         </div>
                         <div class='content-title'>
                             <h5>Vanila và Socola là top 2 thị trường bánh ngọt Mỹ</h5>
                         </div>
                         <div class='content-read-now'>
-                            <a
-                                href='https://mqflavor.com/vanilla-va-socola-la-top-2-huong-vi-trang-mieng-duoc-ua-chuong-nhat-tai-my/#top'
-                                class='main-btn'
-                            > Đọc ngay</a>
+                            <a href='https://mqflavor.com/vanilla-va-socola-la-top-2-huong-vi-trang-mieng-duoc-ua-chuong-nhat-tai-my/#top'
+                                class='main-btn'> Đọc ngay</a>
                         </div>
                     </div>
                 </button>
                 <button class='col-sm-3 custom-button'>
                     <div class='news-item'>
-                        <div
-                            class='content-image'
-                            style="background-image: url('https://mqflavor.com/wp-content/uploads/2021/11/dong-kem-heaven-cua-haagen-dazs-voi-day-du-huong-vi-850x470.jpg');"
-                        >
+                        <div class='content-image'
+                            style="background-image: url('https://mqflavor.com/wp-content/uploads/2021/11/dong-kem-heaven-cua-haagen-dazs-voi-day-du-huong-vi-850x470.jpg');">
                         </div>
                         <div class='content-title'>
                             <h5>Hương vanilla và trái cây được ưa chuộng như thế nào trong thị trường?</h5>
                         </div>
                         <div class='content-read-now'>
-                            <a
-                                href='https://mqflavor.com/vanilla-va-socola-la-top-2-huong-vi-trang-mieng-duoc-ua-chuong-nhat-tai-my/#top'
-                                class='main-btn'
-                            > Đọc ngay</a>
+                            <a href='https://mqflavor.com/vanilla-va-socola-la-top-2-huong-vi-trang-mieng-duoc-ua-chuong-nhat-tai-my/#top'
+                                class='main-btn'> Đọc ngay</a>
                         </div>
                     </div>
                 </button>

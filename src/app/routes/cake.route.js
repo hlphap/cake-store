@@ -4,6 +4,7 @@ const checkUserLogged = require('../../middlewares/check-user-logged');
 
 const router = express.Router();
 
+router.get('/:cakeID', cakeController.getCakeById);
 router.get('/', cakeController.getCakes);
 router.post('/', cakeController.createCake);
 router.put('/:cakeID', cakeController.updateCake);
