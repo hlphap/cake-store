@@ -4,7 +4,7 @@ const { cakeService, typeCakeService } = require('../services');
 const index = catchAsync(async (req, res) => {
     const { user } = req;
     const data = {
-        user,
+        user: mongooseToObject(user),
     };
     res.render('admin/admin', {
         layout: 'admin',

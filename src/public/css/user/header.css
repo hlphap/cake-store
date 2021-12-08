@@ -302,3 +302,9 @@
 
 .user-container-nav-item:hover {
   cursor: pointer; }
+
+.btnLogout {
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  cursor: pointer; }

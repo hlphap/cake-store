@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // logout
-    if (btnLogout) {
-        btnLogout.onclick = (event) => {
+    if (document.querySelector('.btnLogout')) {
+        document.querySelector('.btnLogout').onclick = (event) => {
             event.preventDefault();
             axios
                 .post('/auth/logout')

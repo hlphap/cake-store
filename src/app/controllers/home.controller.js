@@ -1,5 +1,5 @@
 const catchAsync = require('../../utils/catch-async');
-const { multipleMongooseToObject } = require('../../utils/switchObject');
+const { multipleMongooseToObject, mongooseToObject } = require('../../utils/switchObject');
 const { typeCakeService, cakeService } = require('../services');
 
 const index = catchAsync(async (req, res) => {
@@ -8,7 +8,7 @@ const index = catchAsync(async (req, res) => {
     const cakes = await cakeService.getCakes();
     const data = {
         cake: [],
-        user,
+        user: mongooseToObject(user),
         typeCakes: multipleMongooseToObject(typeCakes),
         cakes: multipleMongooseToObject(cakes),
     };

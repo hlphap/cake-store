@@ -37,19 +37,19 @@
 
             <div class="form-group">
                 <label for="province">Tỉnh thành</label>
-                <input type="string" class="form-control" id="province" value="{{user.address.province}}"
+                <input type="string" class="form-control" id="province" value="{{user.address.province.name}}"
                     name="province">
             </div>
 
             <div class="form-group">
                 <label for="district">Quận huyện</label>
-                <input type="string" class="form-control" id="district" value="{{user.address.district}}"
+                <input type="string" class="form-control" id="district" value="{{user.address.district.name}}"
                     name=district>
             </div>
 
             <div class="form-group">
                 <label for="ward">Phường xã</label>
-                <input type="string" class="form-control" id="ward" value="{{user.address.ward}}" name="ward">
+                <input type="string" class="form-control" id="ward" value="{{user.address.ward.name}}" name="ward">
             </div>
 
             <div class="button-group">
@@ -68,12 +68,12 @@
             </div>
 
             <div class="form-group">
-                <label for="password">Họ tên</label>
+                <label for="password">Mật khẩu mới</label>
                 <input type="password" class="form-control" id="newPass" name="newPass">
             </div>
 
             <div class="form-group">
-                <label for="rePass">Ngày sinh</label>
+                <label for="rePass">Nhập lại mật khẩu mới</label>
                 <input type="Password" class="form-control" id="rePass" name="rePass">
             </div>
             <div class="button-group">
