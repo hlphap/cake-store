@@ -1,21 +1,11 @@
 #login-form {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  display: none; }
-
-#login-form .container {
-  position: absolute;
-  top: 50px;
-  left: 38%;
-  justify-content: center;
-  align-items: center;
-  width: 390px;
+  background-color: #fff;
+  margin: 0 auto;
+  width: 420px;
   height: 470px;
   z-index: 2;
   padding: 20px;
   border-radius: 20px;
-  backdrop-filter: blur(15px);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2); }
@@ -26,7 +16,7 @@
   cursor: pointer; }
 
 #login-form .container .form {
-  width: 350px;
+  width: 100%;
   font-weight: 600; }
 
 #login-form .container .form h2 {
@@ -133,34 +123,18 @@
   color: #9f0311; }
 
 #signup-form {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  display: none; }
-
-#signup-form .container {
-  position: absolute;
-  top: 10px;
-  left: 38%;
-  justify-content: center;
-  align-items: center;
-  width: 390px;
-  height: 98%;
+  background-color: #fff;
+  margin: 0 auto;
+  width: 420px;
   z-index: 2;
   padding: 20px;
   border-radius: 20px;
-  backdrop-filter: blur(15px);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2); }
 
-#signup-form .close-btn {
-  position: relative;
-  left: 340px;
-  cursor: pointer; }
-
 #signup-form .container .form {
-  width: 350px;
+  width: 100%;
   font-weight: 600; }
 
 #signup-form .container .form h2 {
@@ -319,13 +293,12 @@
 .user-container-nav-item {
   position: relative; }
 
-.user-container-nav-item:hover .user-nav {
-  display: block;
+.user-nav {
   position: absolute;
   border-radius: 5px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-  right: -30px; }
+  top: 115%;
+  left: -400%; }
 
-.user-container-login,
-.user-container-signup {
-  position: relative; }
+.user-container-nav-item:hover {
+  cursor: pointer; }

@@ -14,6 +14,21 @@ const index = catchAsync(async (req, res) => {
     });
 });
 
+const detailBlog = catchAsync(async (req, res) => {
+    const { user } = req;
+    const data = {
+        cake: [],
+        user,
+    };
+    res.render('user/detail-blog', {
+        title: 'Blog', //  Required Title
+        styles: ['layout-user', 'header', 'footer', 'detail-blog'], // Required Stylesheet name from public
+        scripts: ['detail-blog'], // Required Script name from public
+        data,
+    });
+});
+
 module.exports = {
     index,
+    detailBlog,
 };

@@ -20,9 +20,21 @@ const deleteUser = catchAsync(async (req, res) => {
 const profile = catchAsync(async (req, res) => {
     // Select view to render
     res.render('user/profile', {
-        styles: ['header', 'footer', 'profile'], // Required Stylesheet name from public
+        styles: ['header', 'footer', 'profile', 'layout-user'], // Required Stylesheet name from public
         scripts: ['profile', 'header'], // Required Script name from public
     });
+});
+
+const product = catchAsync(async (req, res) => {
+    // Select view to render
+    res.render('user/product', {
+        styles: ['header', 'footer', 'product'], // Required Stylesheet name from public
+        scripts: ['product', 'header'], // Required Script name from public
+    });
+});
+
+const addToCart = catchAsync(async (req, res) => {
+    res.json(req.body);
 });
 
 const updateUser = catchAsync(async (req, res) => {
@@ -36,4 +48,6 @@ module.exports = {
     updateUser,
     deleteUser,
     profile,
+    product,
+    addToCart,
 };
