@@ -1,4 +1,6 @@
 const express = require('express');
+const { checkRole } = require('../../middlewares/check-role');
+const { passport } = require('../plugins/passport');
 
 const userRoute = require('./user.route');
 const homeRoute = require('./home.route');
@@ -11,6 +13,7 @@ const addressRoute = require('./address.route');
 const blogRoute = require('./blog.route');
 const cakeRoute = require('./cake.route');
 const typeCakeRoute = require('./type-cake.route');
+const checkUserLogged = require('../../middlewares/check-user-logged');
 
 const router = express.Router();
 
@@ -25,7 +28,7 @@ router.use('/auth', authRoute);
 router.use('/blog', blogRoute);
 
 // Admin
-router.use('/admin', adminRoute);
+router.use('/admin', checkUserLogged, checkRole('ADMIN'), adminRoute);
 
 // API
 router.use('/api/cakes', cakeRoute);

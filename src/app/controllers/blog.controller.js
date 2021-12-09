@@ -1,10 +1,10 @@
 const catchAsync = require('../../utils/catch-async');
-
+const { mongooseToObject } = require('../../utils/switchObject');
 const index = catchAsync(async (req, res) => {
     const { user } = req;
     const data = {
         cake: [],
-        user,
+        user: mongooseToObject(user),
     };
     res.render('user/blog', {
         title: 'Blog', //  Required Title
@@ -18,7 +18,7 @@ const detailBlog = catchAsync(async (req, res) => {
     const { user } = req;
     const data = {
         cake: [],
-        user,
+        user: mongooseToObject(user),
     };
     res.render('user/detail-blog', {
         title: 'Blog', //  Required Title

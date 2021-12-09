@@ -6,7 +6,7 @@ const index = catchAsync(async (req, res) => {
     const { user } = req;
     const cakes = await cakeService.getCakes();
     const data = {
-        user,
+        user: mongooseToObject(user),
         cakes: multipleMongooseToObject(cakes),
     };
     return res.render('user/menu', {
@@ -23,7 +23,7 @@ const showCake = catchAsync(async (req, res) => {
     const cake = await cakeService.getCakeById(cakeID);
     const data = {
         cake: mongooseToObject(cake),
-        user,
+        user: mongooseToObject(user),
     };
     // Select view to render
     res.render('user/product', {

@@ -1,6 +1,8 @@
 const httpStatus = require('http-status');
 const catchAsync = require('../../utils/catch-async');
 const userService = require('../services/user.service');
+const { User } = require('../models');
+const { mongooseToObject } = require('../../utils/switchObject');
 
 const getUsers = catchAsync(async (req, res) => {
     const users = await userService.getUsers();
@@ -19,7 +21,12 @@ const deleteUser = catchAsync(async (req, res) => {
 
 const profile = catchAsync(async (req, res) => {
     // Select view to render
+    const user = req.user;
+    const data = {
+        user: mongooseToObject(user),
+    };
     res.render('user/profile', {
+        data,
         styles: ['header', 'footer', 'profile', 'layout-user'], // Required Stylesheet name from public
         scripts: ['profile', 'header'], // Required Script name from public
     });
