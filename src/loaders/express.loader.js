@@ -21,6 +21,12 @@ module.exports = () => {
     //cookie middleware
     app.use(cookieParser());
 
+    // // sanitize request data
+    // app.use(mongoSanitize());
+
+    // // gzip compression
+    // app.use(compression());
+
     // set cors blocked resources
 
     // api routes

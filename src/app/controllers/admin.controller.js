@@ -309,7 +309,8 @@ const managerTypeCake = catchAsync(async (req, res) => {
         data,
         layout: 'admin',
         styles: ['sidebar', 'layout-admin', 'breadcrumb', 'mana-type-cake'],
-        breadcrumbsItem: [
+        scripts: ['mana-type-cake'],
+                breadcrumbsItem: [
             {
                 title: 'Quản lý dịch vụ',
                 href: '#',

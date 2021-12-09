@@ -8,7 +8,8 @@ module.exports = (app) => {
             extname: '.hbs',
             helpers: {
                 sum: (a, b) => a + b,
-                formatDate:(a)=> a.toString().slice(0,16),
+                formatDate: (a) => a.toString().slice(0, 16),
+                checkAdmin: (role) => role === 'ADMIN',
             },
             defaultLayout: 'user',
         }),

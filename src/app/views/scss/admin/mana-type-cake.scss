@@ -140,18 +140,23 @@
     z-index: 1;
 }
 
-.manaTypeCake-dropdown-content a {
+.manaTypeCake-dropdown-content button {
     color: #9f0311;
     padding: 3px 12px;
     text-decoration: none;
     display: block;
     font-weight: bold;
+    outline: none;
+    border: none;
+    width: 100%;
 }
 
-.manaTypeCake-dropdown-content a:hover {
+.manaTypeCake-dropdown-content button:hover {
     background-color: #9f0311;
     color: white;
     border-radius: 6px;
+    outline: none;
+    border: none;
 }
 
 .manaTypeCake-dropdown:hover .manaTypeCake-dropdown-content {
