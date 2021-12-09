@@ -49,9 +49,16 @@
                             </div>
                         </li>
                         <hr>
+                        {{#if (checkAdmin data.user.role)}}
+                        <li>
+                            <a href="/admin/user/info">Thông tin cá nhân</a>
+                        </li>
+                        {{else}}
                         <li>
                             <a href="/users/profile/{{data.user._id}}">Thông tin cá nhân</a>
                         </li>
+                        {{/if}}
+
                         <hr>
                         <li>
                             <a href="">Lịch sử mua hàng</a>
@@ -65,7 +72,7 @@
             </ul>
             <p style="display: none;" id="loginBtn"></p>
             <p style="display: none;" id="registryBtn"></p>
-            
+
             {{else}}
             <div class='user-container'>
                 <div class="user-container-login">

@@ -28,3 +28,13 @@ checkout.innerHTML = htmlInsert;
 for (let i = 0; i < totalPriceClass.length; i++) {
     totalPriceClass[i].innerHTML = `${totalPrice}đ`;
 }
+
+$('#btn-DatHang').click(() => {
+    console.log('object');
+    $('#alert').html(`<div class="alert alert-success fade show" id='alertLog' role="alert">
+                                    Đặt hàng thành công
+                            </div>`);
+    setTimeout(() => {
+        $('#alertLog').alert('close');
+    }, 4000);
+});

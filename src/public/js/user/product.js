@@ -32,7 +32,7 @@ btnAddToCart.onclick = function (event) {
 
                 localStorage.setItem('cart', JSON.stringify(carts));
                 $('#alert').html(`<div class="alert alert-success fade show" id='alertLog' role="alert">
-                                    Thêm bánh thành công
+                                    Thêm bánh  ${newCake.name} thành công
                             </div>`);
                 setTimeout(() => {
                     $('#alertLog').alert('close');
